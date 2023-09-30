@@ -47,13 +47,32 @@ body {
     margin-left: 5px;
 }
 
+
+
+/* This is the default state of the dropdown when it's not being hovered over or clicked */
 .vertical {
-    display: block;
+    display: none;
     text-align: left;
     margin-top: 0.1em;
     opacity: 0; /* Initially set opacity to 0 (hidden) */
     transition: opacity 0.9s ease, color 0.9s ease; /* Add a transition for opacity and color */
 }
+
+/* When hovering over the letter-section, display the dropdown */
+.letter-section:hover .vertical {
+    display: block; /* Display the dropdown on hover */
+    opacity: 1;
+    color: grey;; /* Change the color to grey */
+    transition: color 0.9s ease, border-color 0.9s ease; /* Add transitions for color and border-color */
+}
+
+/* This is the state of the dropdown when it's clicked and should "stick" */
+.sticky-dropdown {
+    display: block !important;
+    opacity: 1 !important;
+}
+
+
 
 .letter-section .boxed {
     color: white;
@@ -61,12 +80,7 @@ body {
     transition: color 0.9s ease, border-color 0.9s ease; /* Add transitions for color and border-color */
 }
 
-.letter-section:hover .vertical {
-    opacity: 1;
-    color: grey;; /* Change the color to grey */
-    transition: color 0.9s ease, border-color 0.9s ease; /* Add transitions for color and border-color */
 
-}
 
 
 .letter-section:hover .boxed {
