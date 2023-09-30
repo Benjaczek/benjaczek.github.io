@@ -41,3 +41,34 @@ function isMobileDevice() {
     return (window.innerWidth <= 800) && (window.innerHeight <= 600); 
     // Adjust the values to suit your requirements
 }
+
+
+document.getElementById('productions').addEventListener('click', function() {
+    const infoBox = document.getElementById('productions-info');
+    
+    if (infoBox.style.display === 'none' || infoBox.style.display === '') {
+        infoBox.style.display = 'block';
+    } else {
+        infoBox.style.display = 'none';
+    }
+});
+
+document.getElementById('compositions').addEventListener('click', function() {
+    const infoBox = document.getElementById('compositions-info');
+    
+    if (infoBox.style.display === 'none' || infoBox.style.display === '') {
+        infoBox.style.display = 'block';
+    } else {
+        infoBox.style.display = 'none';
+    }
+});
+
+document.getElementById('more').addEventListener('click', function() {
+    const infoBox = document.getElementById('more-info');
+    
+    if (infoBox.style.display === 'none' || infoBox.style.display === '') {
+        infoBox.style.display = 'block';
+    } else {
+        infoBox.style.display = 'none';
+    }
+});
