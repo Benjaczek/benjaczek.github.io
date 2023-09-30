@@ -150,6 +150,17 @@ a {
 }
 
 
+.impressum {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+    color: lightgrey;
+    padding: 5px;
+    background: black; /* Optional: Adds a slight white background for better readability */
+}
+
 
 
 
