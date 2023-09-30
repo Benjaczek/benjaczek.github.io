@@ -16,8 +16,12 @@ body {
     font-size: 3em;
     font-weight: bold;
     text-transform: uppercase;
-    display: flex;
+    display: flex; /* This will align child elements horizontally by default */
+    flex-wrap: wrap;  This allows for wrapping in case the content exceeds the screen width */
+    align-items: center; /* This vertically aligns the items in the middle of the flex container */
+    justify-content: top; /* This centers the items horizontally */
 }
+
 
 .letter-section {
     display: inline-block;
@@ -199,7 +203,7 @@ a {
     }
 
     .letter-section {
-        margin-right: 5px; /* Adjust the margin for mobile */
+        margin-right: 20px; /* Adjust the margin for mobile */
     }
 
     .boxed {
