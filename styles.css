@@ -108,6 +108,50 @@ a {
 
 
 
+.art-links {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+.art-link {
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.art-link:hover {
+    color: #777; /* Change to desired hover color */
+}
+
+.info-box {
+    display: none;
+    background: black;
+    border: 2px solid white; /* Add a white border */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Aspect Ratio 16:9 */
+    padding-top: 25px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
 
 @media screen and (max-width: 768px) {
     .name {
@@ -123,6 +167,14 @@ a {
         margin-right: 5px; /* Reduced from 50px */
     }
 
+    .fixed-container {
+        float: none;  /* reset any floats */
+        margin-left: auto;  /* centering */
+        margin-right: auto; /* centering */
+        width: 100%; /* or any preferred width, e.g., 90% to allow some margin */
+        max-width: none; /* ensure any desktop-specific width doesn't interfere */
+    }
+
     .bio-container, .art-container, .kontakt-container {
         margin-left: auto;
         margin-right: auto;
@@ -133,3 +185,6 @@ a {
         font-size: 20px; /* Adjust as needed */
     }
 }
+
+
+
