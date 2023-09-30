@@ -6,19 +6,19 @@ let touchedLinks = {};
 // Add click event listeners to each menu link
 menuLinks.forEach((menuLink) => {
     menuLink.addEventListener('click', (event) => {
-        const dropdown = menuLink.querySelector('.vertical');
         if (isMobileDevice()) {
-            // If the dropdown isn't showing, prevent the link and show it
-            if (dropdown && dropdown.style.opacity !== "1") {
-                event.preventDefault(); // prevent following the link
-                dropdown.style.opacity = "1";
-                touchedLinks[menuLink] = true;
-            } else if (dropdown && touchedLinks[menuLink]) {
-                // If dropdown is showing and link was previously clicked, navigate
-                navigateToLink(menuLink.querySelector('a').getAttribute('href'));
+            const dropdown = menuLink.querySelector('.vertical');
+            if (dropdown) {
+                if (dropdown.style.opacity !== "1") {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    dropdown.style.opacity = "1";
+                    touchedLinks[menuLink] = true;
+                } else if (touchedLinks[menuLink]) {
+                    navigateToLink(menuLink.querySelector('a').getAttribute('href'));
+                }
             }
         } else {
-            // Not on a mobile device, just navigate
             navigateToLink(menuLink.querySelector('a').getAttribute('href'));
         }
     });
