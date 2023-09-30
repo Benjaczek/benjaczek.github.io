@@ -217,8 +217,8 @@ a {
         margin-right: auto; /* centering */
         width: 100%;/* or any preferred width, e.g., 90% to allow some margin */
         max-width: none;
-        align-items: flex-start; /* This vertically aligns the items in the middle of the flex container */
-        justify-content: flex-start; /* ensure any desktop-specific width doesn't interfere */
+        /*align-items: flex-start; /* This vertically aligns the items in the middle of the flex container */
+        /*justify-content: flex-start; /* ensure any desktop-specific width doesn't interfere */
     }
 
     .bio-container, .art-container, .kontakt-container {
