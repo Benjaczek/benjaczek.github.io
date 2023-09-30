@@ -1,52 +1,35 @@
 // Get all menu links
 const menuLinks = document.querySelectorAll('.menu-link');
 
-let touchedLinks = {};
-const tapCounts = {};
-
-menuLinks.forEach((menuLink) => {
-    tapCounts[menuLink] = 0;  // Initialize each link with a tap count of 0
-});
-
-// Add click event listeners to each menu link
 menuLinks.forEach((menuLink) => {
     menuLink.addEventListener('click', (event) => {
         const dropdown = menuLink.querySelector('.vertical');
-        if (isMobileDevice() && dropdown) {
-            tapCounts[menuLink] += 1;  // Increment the tap count
 
-            if (tapCounts[menuLink] === 1) {
-                // First tap, show dropdown
+        if (isMobileDevice() && dropdown) {
+            if (!dropdown.classList.contains('sticky-dropdown')) {
+                // Show dropdown on first click
                 event.preventDefault();
-                dropdown.style.opacity = "1";
-            } else if (tapCounts[menuLink] === 2) {
-                // Second tap, do nothing but keep the dropdown visible
-                event.preventDefault();
-            } else if (tapCounts[menuLink] === 3) {
-                // Third tap, navigate to the link and reset tap count
+                dropdown.classList.add('sticky-dropdown');
+            } else {
+                // Navigate on the second click
                 navigateToLink(menuLink.querySelector('a').getAttribute('href'));
-                tapCounts[menuLink] = 0;
             }
         } else {
-            // Not on a mobile device, just navigate
+            // For non-mobile devices, navigate on click
             navigateToLink(menuLink.querySelector('a').getAttribute('href'));
         }
     });
 });
 
 function navigateToLink(href) {
-    if (window.location.href.endsWith(href)) {
-        window.location.href = 'index.html';
-    } else {
-        window.location.href = href;
-    }
+    window.location.href = href;
 }
 
 function isMobileDevice() {
     return (window.innerWidth <= 800) && (window.innerHeight <= 600); 
 }
 
-// The following two functions seem to be repeated in your code, so I'm only keeping the class-based version.
+// Existing info box logic
 function hideAllInfoBoxes() {
     const infoBoxes = document.querySelectorAll('.info-box');
     infoBoxes.forEach(box => {
@@ -78,14 +61,13 @@ document.getElementById('more').addEventListener('click', function() {
     toggleInfoBox('more-info');
 });
 
-// Reset tap count if user clicks outside of a menu link.
+// Hide the dropdown if clicked outside of a menu link.
 document.addEventListener('click', (event) => {
     if (!event.target.closest('.menu-link')) {
         menuLinks.forEach((menuLink) => {
-            tapCounts[menuLink] = 0;
             const dropdown = menuLink.querySelector('.vertical');
-            if (dropdown) {
-                dropdown.style.opacity = "0";  // Hide the dropdown
+            if (dropdown && dropdown.classList.contains('sticky-dropdown')) {
+                dropdown.classList.remove('sticky-dropdown');  // Hide the dropdown
             }
         });
     }
