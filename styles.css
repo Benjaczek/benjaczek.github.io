@@ -17,7 +17,7 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     display: flex; /* This will align child elements horizontally by default */
-    flex-wrap: wrap;  This allows for wrapping in case the content exceeds the screen width */
+    flex-wrap: wrap; /* This allows for wrapping in case the content exceeds the screen width */
     align-items: center; /* This vertically aligns the items in the middle of the flex container */
     justify-content: top; /* This centers the items horizontally */
 }
