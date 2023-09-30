@@ -125,12 +125,21 @@ a {
 }
 
 .info-box {
-    display: none;
+    opacity: 0;
+    transition: opacity 0.9s ease-out; /* 0.5s is the duration; you can adjust it */
+    visibility: hidden; 
+    position: absolute; /* Add this */
     background: black;
     border: 2px solid white; /* Add a white border */
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
+}
+
+.info-box.showing {
+    opacity: 1;
+    visibility: visible;
+    position: relative; /* Add this */
 }
 
 .video-container {
@@ -148,6 +157,21 @@ a {
     width: 100%;
     height: 100%;
 }
+
+.button {
+    color: white;
+    border: 1px solid white; /* added border */
+    padding: 10px 15px; /* padding to make buttons more visually appealing */
+    display: inline-block; /* to ensure that padding and borders are applied */
+    cursor: pointer; /* to indicate that it's clickable */
+    transition: color 0.9s ease, border-color 0.9s ease; /* transitions */
+}
+
+.button:hover, .button:active {
+    color: grey;
+    border-color: grey;
+}
+
 
 
 .impressum {
