@@ -195,6 +195,11 @@ a {
 @media screen and (max-width: 768px) {
     .name {
         font-size: 1em;
+        float: none;  /* reset any floats */
+        margin-left: auto;  /* centering */
+        margin-right: auto; /* centering */
+        width: 90%; /* or any preferred width, e.g., 90% to allow some margin */
+        max-width: none; /* ensure any desktop-specific width doesn't interfere */
     }
 
     body {
