@@ -195,15 +195,10 @@ a {
 @media screen and (max-width: 768px) {
     .name {
         font-size: 1em;
-        float: none;  /* reset any floats */
-        margin-left: auto;  /* centering */
-        margin-right: auto; /* centering */
-        width: 90%; /* or any preferred width, e.g., 90% to allow some margin */
-        max-width: none; /* ensure any desktop-specific width doesn't interfere */
     }
 
     body {
-        /*overflow-x: hidden;*/
+        overflow-x: hidden;
         padding-top: 50px; /* Reduced from 150px */
     }
 
@@ -219,8 +214,10 @@ a {
         float: none;  /* reset any floats */
         margin-left: auto;  /* centering */
         margin-right: auto; /* centering */
-        width: 90%; /* or any preferred width, e.g., 90% to allow some margin */
-        max-width: none; /* ensure any desktop-specific width doesn't interfere */
+        width: 100%;/* or any preferred width, e.g., 90% to allow some margin */
+        max-width: none;
+        align-items: flex-start; /* This vertically aligns the items in the middle of the flex container */
+        justify-content: flex-start; /* ensure any desktop-specific width doesn't interfere */
     }
 
     .bio-container, .art-container, .kontakt-container {
