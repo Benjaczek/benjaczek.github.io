@@ -169,10 +169,6 @@ a {
         font-size: 1em;
     }
 
-    .letter-section:active .vertical {
-        opacity: 1;
-    }
-
     body {
         /*overflow-x: hidden;*/
         padding-top: 50px; /* Reduced from 150px */
