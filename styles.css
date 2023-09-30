@@ -1,244 +1,92 @@
-body {
-    background-color: black;
-    color: white;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start; /* Align items near the top */
-    height: 200vh;
-    padding-top: 150px; /* Add some top padding to create spacing */
-    /*padding-left: px; Add some top padding to create spacing */
+// Get all menu links
+const menuLinks = document.querySelectorAll('.menu-link');
 
-}
+let touchedLinks = {};
+const tapCounts = {};
 
-.name {
-    font-size: 3em;
-    font-weight: bold;
-    text-transform: uppercase;
-    display: flex; /* This will align child elements horizontally by default */
-    flex-wrap: wrap; /* This allows for wrapping in case the content exceeds the screen width */
-    align-items: flex-start; /* This vertically aligns the items in the middle of the flex container */
-    justify-content: flex-start; /* This centers the items horizontally */
-}
+menuLinks.forEach((menuLink) => {
+    tapCounts[menuLink] = 0;  // Initialize each link with a tap count of 0
+});
 
+// Add click event listeners to each menu link
+menuLinks.forEach((menuLink) => {
+    menuLink.addEventListener('click', (event) => {
+        const dropdown = menuLink.querySelector('.vertical');
+        if (isMobileDevice() && dropdown) {
+            tapCounts[menuLink] += 1;  // Increment the tap count
 
-.letter-section {
-    display: inline-block;
-    text-align: center;
-    position: relative;
-    margin-right: 50px; /* Add margin between each name */
-}
+            if (tapCounts[menuLink] === 1) {
+                // First tap, show dropdown
+                event.preventDefault();
+                dropdown.style.opacity = "1";
+            } else if (tapCounts[menuLink] === 2) {
+                // Second tap, do nothing but keep the dropdown visible
+                event.preventDefault();
+            } else if (tapCounts[menuLink] === 3) {
+                // Third tap, navigate to the link and reset tap count
+                navigateToLink(menuLink.querySelector('a').getAttribute('href'));
+                tapCounts[menuLink] = 0;
+            }
+        } else {
+            // Not on a mobile device, just navigate
+            navigateToLink(menuLink.querySelector('a').getAttribute('href'));
+        }
+    });
+});
 
-.horizontal {
-    display: flex;
-    align-items: center;
-}
-
-.boxed {
-    border: 2px solid white;
-    padding: 5px;
-    display: inline-block;
-}
-
-.next-to {
-    display: inline-block;
-    vertical-align: middle; /* Change top to middle */
-    margin-left: 5px;
-}
-
-.vertical {
-    display: block;
-    text-align: left;
-    margin-top: 0.1em;
-    opacity: 0; /* Initially set opacity to 0 (hidden) */
-    transition: opacity 0.9s ease, color 0.9s ease; /* Add a transition for opacity and color */
-}
-
-.letter-section .boxed {
-    color: white;
-    border-color: white;
-    transition: color 0.9s ease, border-color 0.9s ease; /* Add transitions for color and border-color */
-}
-
-.letter-section:hover .vertical {
-    opacity: 1;
-    color: grey;; /* Change the color to grey */
-    transition: color 0.9s ease, border-color 0.9s ease; /* Add transitions for color and border-color */
-
-}
-
-
-.letter-section:hover .boxed {
-    color:  grey; /* Change the color to grey */
-    border-color: grey; /* Change the border color to grey */
-    transition: color 0.9s ease, border-color 0.9s ease; /* Add transitions for color and border-color */
-}
-
-
-
-a {
-    text-decoration: none; /* Remove underlines from links */
-    color: white; /* Set link color to white */
-}
-
-
-/* Styling for the bio container */
-.bio-container {
-    background-color: black; /* Set the background color to white */
-    padding: 20px; /* Add padding to create space between content and box */
-    border: 2px solid white; /* Add a white border */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
-    margin-top: 20px; /* Add margin to create space between the box and other elements */
-}
-
-/* Styling for the bio container */
-.art-container {
-    background-color: black; /* Set the background color to white */
-    padding: 20px; /* Add padding to create space between content and box */
-    border: 2px solid white; /* Add a white border */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
-    margin-top: 20px; /* Add margin to create space between the box and other elements */
-}
-
-/* Styling for the bio container */
-.kontakt-container {
-    background-color: black; /* Set the background color to white */
-    padding: 20px; /* Add padding to create space between content and box */
-    border: 2px solid white; /* Add a white border */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
-    margin-top: 20px; /* Add margin to create space between the box and other elements */
-}
-
-
-
-.art-links {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px 0;
-    cursor: pointer;
-}
-
-.art-link {
-    font-size: 24px;
-    transition: color 0.3s;
-}
-
-.art-link:hover {
-    color: #777; /* Change to desired hover color */
-}
-
-.info-box {
-    opacity: 0;
-    transition: opacity 0.9s ease-out; /* 0.5s is the duration; you can adjust it */
-    visibility: hidden; 
-    position: absolute; /* Add this */
-    background: black;
-    border: 2px solid white; /* Add a white border */
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-}
-
-.info-box.showing {
-    opacity: 1;
-    visibility: visible;
-    position: relative; /* Add this */
-}
-
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%; /* Aspect Ratio 16:9 */
-    padding-top: 25px;
-    height: 0;
-    overflow: hidden;
-}
-
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.button {
-    color: white;
-    border: 1px solid white; /* added border */
-    padding: 10px 15px; /* padding to make buttons more visually appealing */
-    display: inline-block; /* to ensure that padding and borders are applied */
-    cursor: pointer; /* to indicate that it's clickable */
-    transition: color 0.9s ease, border-color 0.9s ease; /* transitions */
-}
-
-.button:hover, .button:active {
-    color: grey;
-    border-color: grey;
-}
-
-
-
-.impressum {
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
-    text-align: flex;
-    font-size: 10px;
-    color: lightgrey;
-    padding: 5px;
-    background: black; /* Optional: Adds a slight white background for better readability */
-}
-
-
-
-
-@media screen and (max-width: 768px) {
-    .name {
-        font-size: 1em;
-    }
-
-    body {
-        overflow-x: hidden;
-        padding-top: 50px; /* Reduced from 150px */
-    }
-
-    .letter-section {
-        margin-right: 20px; /* Adjust the margin for mobile */
-    }
-
-    .boxed {
-        padding: 3px; /* Reduce padding on mobile */
-    }
-
-    .fixed-container {
-        float: none;  /* reset any floats */
-        margin-left: auto;  /* centering */
-        margin-right: auto; /* centering */
-        width: 80%;/* or any preferred width, e.g., 90% to allow some margin */
-        max-width: none;
-        align-items: flex-start; /* This vertically aligns the items in the middle of the flex container */
-        justify-content: flex-start; /* ensure any desktop-specific width doesn't interfere */
-    }
-
-    .bio-container, .art-container, .kontakt-container {
-        margin-left: auto;
-        margin-right: auto;
-        padding: 5px; /* Reduced from 20px */
-    }
-
-    .art-links {
-        font-size: 1em;
-    }
-
-    .art-link {
-        font-size: 18px;
-        transition: color 0.3s;
-    }
-
-    h1 {
-        font-size: 20px; /* Adjust as needed */
+function navigateToLink(href) {
+    if (window.location.href.endsWith(href)) {
+        window.location.href = 'index.html';
+    } else {
+        window.location.href = href;
     }
 }
 
+function isMobileDevice() {
+    return (window.innerWidth <= 800) && (window.innerHeight <= 600); 
+}
 
+// The following two functions seem to be repeated in your code, so I'm only keeping the class-based version.
+function hideAllInfoBoxes() {
+    const infoBoxes = document.querySelectorAll('.info-box');
+    infoBoxes.forEach(box => {
+        box.classList.remove('showing');
+    });
+}
 
+function toggleInfoBox(id) {
+    const infoBox = document.getElementById(id);
+    if (!infoBox.classList.contains('showing')) {
+        infoBox.classList.add('showing');
+    } else {
+        infoBox.classList.remove('showing');
+    }
+}
+
+document.getElementById('productions').addEventListener('click', function() {
+    hideAllInfoBoxes();
+    toggleInfoBox('productions-info');
+});
+
+document.getElementById('compositions').addEventListener('click', function() {
+    hideAllInfoBoxes();
+    toggleInfoBox('compositions-info');
+});
+
+document.getElementById('more').addEventListener('click', function() {
+    hideAllInfoBoxes();
+    toggleInfoBox('more-info');
+});
+
+// Reset tap count if user clicks outside of a menu link.
+document.addEventListener('click', (event) => {
+    if (!event.target.closest('.menu-link')) {
+        menuLinks.forEach((menuLink) => {
+            tapCounts[menuLink] = 0;
+            const dropdown = menuLink.querySelector('.vertical');
+            if (dropdown) {
+                dropdown.style.opacity = "0";  // Hide the dropdown
+            }
+        });
+    }
+});
