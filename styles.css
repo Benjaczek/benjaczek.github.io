@@ -2,26 +2,15 @@ body {
     background-color: black;
     color: white;
     font-family: Arial, sans-serif;
-}
-
-.header {
+    margin: 0;
     display: flex;
-    margin-top: 20px;
-    margin-left: 20px;
-    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* this makes the body fill the entire viewport */
 }
 
-.box {
-    border: 2px solid white;
-    padding: 5px 10px;
-}
-
-.big {
-    font-size: 2em;
-    display: block;
-}
-
-.small {
-    font-size: 1em;
-    display: block;
+.name {
+    font-size: 3em; /* increased the font size */
+    font-weight: bold; /* made the font bold */
+    text-transform: uppercase; /* this ensures the text is in all caps, even if written in lowercase in the HTML */
 }
