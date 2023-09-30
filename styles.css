@@ -109,14 +109,13 @@ a {
 
 
 
-
-/* Media Query */
 @media screen and (max-width: 768px) {
     .name {
         font-size: 1em;
     }
 
     body {
+        overflow-x: hidden;
         padding-top: 50px; /* Reduced from 150px */
     }
 
@@ -125,6 +124,8 @@ a {
     }
 
     .bio-container, .art-container, .kontakt-container {
+        margin-left: auto;
+        margin-right: auto;
         padding: 20px; /* Reduced from 20px */
     }
 
@@ -132,4 +133,3 @@ a {
         font-size: 20px; /* Adjust as needed */
     }
 }
-
