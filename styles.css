@@ -214,10 +214,8 @@ a {
         float: none;  /* reset any floats */
         margin-left: auto;  /* centering */
         margin-right: auto; /* centering */
-        width: 100%;/* or any preferred width, e.g., 90% to allow some margin */
+        width: 80%;/* or any preferred width, e.g., 90% to allow some margin */
         max-width: none;
-        align-items: center; /* This vertically aligns the items in the middle of the flex container */
-        justify-content: center; /* ensure any desktop-specific width doesn't interfere */
     }
 
     .bio-container, .art-container, .kontakt-container {
