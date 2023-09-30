@@ -198,6 +198,14 @@ a {
         padding-top: 50px; /* Reduced from 150px */
     }
 
+    .letter-section {
+        margin-right: 20px; /* Adjust the margin for mobile */
+    }
+
+    .boxed {
+        padding: 3px; /* Reduce padding on mobile */
+    }
+
     .fixed-container {
         float: none;  /* reset any floats */
         margin-left: auto;  /* centering */
