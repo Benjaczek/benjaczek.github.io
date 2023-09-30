@@ -6,11 +6,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* this makes the body fill the entire viewport */
+    height: 100vh;
 }
 
 .name {
-    font-size: 3em; /* increased the font size */
-    font-weight: bold; /* made the font bold */
-    text-transform: uppercase; /* this ensures the text is in all caps, even if written in lowercase in the HTML */
+    font-size: 3em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.boxed {
+    border: 2px solid white;
+    padding: 5px;
 }
