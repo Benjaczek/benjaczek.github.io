@@ -167,10 +167,6 @@ a {
         padding-top: 50px; /* Reduced from 150px */
     }
 
-    .letter-section {
-        margin-right: 5px; /* Reduced from 50px */
-    }
-
     .fixed-container {
         float: none;  /* reset any floats */
         margin-left: auto;  /* centering */
