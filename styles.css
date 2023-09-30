@@ -113,7 +113,7 @@ a {
 /* Media Query */
 @media screen and (max-width: 768px) {
     .name {
-        font-size: 2em;
+        font-size: 1em;
     }
 
     body {
@@ -121,15 +121,15 @@ a {
     }
 
     .letter-section {
-        margin-right: 20px; /* Reduced from 50px */
+        margin-right: 5px; /* Reduced from 50px */
     }
 
     .bio-container, .art-container, .kontakt-container {
-        padding: 10px; /* Reduced from 20px */
+        padding: 5px; /* Reduced from 20px */
     }
 
     h1 {
-        font-size: 24px; /* Adjust as needed */
+        font-size: 16px; /* Adjust as needed */
     }
 }
 
