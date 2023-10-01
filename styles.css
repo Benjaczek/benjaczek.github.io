@@ -282,7 +282,6 @@ a {
         margin-left: auto;
         margin-right: auto;
         padding: 5px; /* Reduced from 20px */
-        height: 400px
     }
 
     .art-links {
@@ -299,13 +298,19 @@ a {
     }
 }
 
+/* For screens smaller than 600px (typically smartphones) */
+@media (max-width: 600px) {
+    .bio-container {
+        max-height: 400px;
 
+    }
+}
 
 /* For screens between 600px and 900px (typically tablets) */
 @media (min-width: 601px) and (max-width: 900px) {
     .bio-container {
         padding: 20px;
-        
+        max-height: 400px;
         /* Adjust other styles for medium screens if needed */
     }
 }
@@ -315,9 +320,11 @@ a {
     .bio-container h1 {
         font-size: 15px; /* or whatever size you find appropriate */
         width: 95%; /* You can adjust this as per your design */
+        max-height: 400px;
     }
     .bio-container p {
         font-size: 15px; /* or another suitable size */
+        max-height: 400px;
     }
 }
 
@@ -327,6 +334,5 @@ a {
         font-size: 18px; /* Increase font size for better visibility */
     }
 }
-
 
 
