@@ -142,7 +142,7 @@ a {
 }
 
 .art-link {
-    font-size: 24px;
+    font-size: 1.5em;
     transition: color 0.3s;
 }
 
@@ -205,7 +205,7 @@ a {
     bottom: 10px;
     width: 100%;
     text-align: center;
-    font-size: 12px;
+    font-size: 0.857em;
     color: lightgrey;
     padding: 5px;
     background: black; /* Optional: Adds a slight white background for better readability */
@@ -219,7 +219,7 @@ a {
     bottom: 200px;
     width: 100%;
     text-align: center;
-    font-size: 20px;
+    font-size: 1.25em;
     color: lightgrey;
     padding: 5px;
     background: black; /* Optional: Adds a slight white background for better readability */
@@ -230,7 +230,7 @@ a {
     padding: 5px 5px;  /* Padding around the text for size */
     background-color: #333;  /* Dark background color */
     color: white;  /* Text color */
-    font-size: 16px;  /* Text size */
+    font-size: 1em;  /* Text size */
     border: none;  /* Remove default borders */
     border-radius: 5px;  /* Rounded corners */
     cursor: pointer;  /* Change cursor to hand on hover */
@@ -285,7 +285,7 @@ a {
     }
 
     .big_words_container{
-        font-size: 15px;
+        font-size: 1em;
     }
 
     .art-links {
@@ -293,12 +293,12 @@ a {
     }
 
     .art-link {
-        font-size: 18px;
+        font-size: 1.125em;
         transition: color 0.3s;
     }
 
     h1 {
-        font-size: 20px; /* Adjust as needed */
+        font-size: 1.25em; /* Adjust as needed */
     }
 }
 
@@ -322,12 +322,12 @@ a {
 
 @media (max-width: 600px) {
     .bio-container h1 {
-        font-size: 15px; /* or whatever size you find appropriate */
+        font-size: 1em; /* or whatever size you find appropriate */
         width: 95%; /* You can adjust this as per your design */
         max-height: 400px;
     }
     .bio-container p {
-        font-size: 15px; /* or another suitable size */
+        font-size: 1em; /* or another suitable size */
         max-height: 400px;
     }
 }
@@ -335,7 +335,7 @@ a {
 @media (max-width: 600px) {
     #viewMoreBtn {
         padding: 5px 5px; /* Increase the button's padding */
-        font-size: 18px; /* Increase font size for better visibility */
+        font-size: 1em; /* Increase font size for better visibility */
     }
 }
 
