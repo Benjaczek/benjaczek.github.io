@@ -51,21 +51,20 @@ body {
 
 
 /* This is the default state of the dropdown when it's not being hovered over or clicked */
-/* Hide the dropdown by default */
 .vertical {
     display: none;
     text-align: left;
     margin-top: 0.1em;
-    opacity: 0;
-    transition: opacity 0.9s ease, color 0.9s ease;
+    opacity: 0; /* Initially set opacity to 0 (hidden) */
+    transition: opacity 0.9s ease, color 0.9s ease; /* Add a transition for opacity and color */
 }
 
-/* When the parent has the show-dropdown class, display the dropdown */
-.letter-section.show-dropdown .vertical {
-    display: block;
+/* When hovering over the letter-section, display the dropdown */
+.letter-section:hover .vertical {
+    display: block; /* Display the dropdown on hover */
     opacity: 1;
-    color: grey;
-    transition: color 0.9s ease, border-color 0.9s ease;
+    color: grey;; /* Change the color to grey */
+    transition: color 0.9s ease, border-color 0.9s ease; /* Add transitions for color and border-color */
 }
 
 /* This is the state of the dropdown when it's clicked and should "stick" */
@@ -143,7 +142,7 @@ a {
 }
 
 .art-link {
-    font-size: 1.5em;
+    font-size: 24px;
     transition: color 0.3s;
 }
 
@@ -206,7 +205,7 @@ a {
     bottom: 10px;
     width: 100%;
     text-align: center;
-    font-size: 0.857em;
+    font-size: 12px;
     color: lightgrey;
     padding: 5px;
     background: black; /* Optional: Adds a slight white background for better readability */
@@ -220,7 +219,7 @@ a {
     bottom: 200px;
     width: 100%;
     text-align: center;
-    font-size: 1.25em;
+    font-size: 20px;
     color: lightgrey;
     padding: 5px;
     background: black; /* Optional: Adds a slight white background for better readability */
@@ -231,7 +230,7 @@ a {
     padding: 5px 5px;  /* Padding around the text for size */
     background-color: #333;  /* Dark background color */
     color: white;  /* Text color */
-    font-size: 1em;  /* Text size */
+    font-size: 16px;  /* Text size */
     border: none;  /* Remove default borders */
     border-radius: 5px;  /* Rounded corners */
     cursor: pointer;  /* Change cursor to hand on hover */
@@ -285,21 +284,17 @@ a {
         padding: 5px; /* Reduced from 20px */
     }
 
-    .big_words_container{
-        font-size: 1em;
-    }
-
     .art-links {
         font-size: 1em;
     }
 
     .art-link {
-        font-size: 1.125em;
+        font-size: 18px;
         transition: color 0.3s;
     }
 
     h1 {
-        font-size: 1.25em; /* Adjust as needed */
+        font-size: 20px; /* Adjust as needed */
     }
 }
 
@@ -314,7 +309,7 @@ a {
 /* For screens between 600px and 900px (typically tablets) */
 @media (min-width: 601px) and (max-width: 900px) {
     .bio-container {
-        padding: 5px;
+        padding: 20px;
         max-height: 400px;
         /* Adjust other styles for medium screens if needed */
     }
@@ -323,19 +318,21 @@ a {
 
 @media (max-width: 600px) {
     .bio-container h1 {
-        font-size: 1em; /* or whatever size you find appropriate */
+        font-size: 15px; /* or whatever size you find appropriate */
         width: 95%; /* You can adjust this as per your design */
         max-height: 400px;
     }
     .bio-container p {
-        font-size: 1em; /* or another suitable size */
+        font-size: 15px; /* or another suitable size */
         max-height: 400px;
     }
 }
 
 @media (max-width: 600px) {
     #viewMoreBtn {
-        padding: 5px 5px; /* Increase the button's padding */
-        font-size: 1em; /* Increase font size for better visibility */
+        padding: 12px 20px; /* Increase the button's padding */
+        font-size: 18px; /* Increase font size for better visibility */
     }
 }
+
+
