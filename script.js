@@ -1,48 +1,32 @@
-// Get all menu links
+// Detect if the device is touch-enabled
+let isTouchDevice = ('ontouchstart' in window || navigator.maxTouchPoints);
+
 const menuLinks = document.querySelectorAll('.menu-link');
 const bioContainer = document.querySelector('.bio-container');
 const viewMoreBtn = document.getElementById('viewMoreBtn');
 const hiddenBio = document.getElementById('hiddenBio');
 
-
-
 menuLinks.forEach((menuLink) => {
-    menuLink.addEventListener('click', (event) => {
-        const dropdown = menuLink.querySelector('.vertical');
-
-        if (isMobileDevice() && dropdown) {
-            if (!dropdown.classList.contains('sticky-dropdown')) {
-                // Show dropdown on first click
-                event.preventDefault();
-                dropdown.classList.add('sticky-dropdown');
+    const dropdown = menuLink.querySelector('.vertical');
+    if (isTouchDevice) {
+        menuLink.addEventListener('click', (event) => {
+            if (dropdown.style.display === 'block') {
+                dropdown.style.display = 'none';
             } else {
-                // Navigate on the second click
-                navigateToLink(menuLink.querySelector('a').getAttribute('href'));
+                dropdown.style.display = 'block';
+                event.preventDefault(); // prevent the immediate navigation
             }
-        } else {
-            // For non-mobile devices, navigate on click
-            navigateToLink(menuLink.querySelector('a').getAttribute('href'));
-        }
-    });
+        });
+    } else {
+        // Desktop behavior: show on hover and hide on mouseout
+        menuLink.addEventListener('mouseover', () => {
+            dropdown.style.display = 'block';
+        });
+        menuLink.addEventListener('mouseout', () => {
+            dropdown.style.display = 'none';
+        });
+    }
 });
-
-function navigateToLink(href) {
-    window.location.href = href;
-}
-
-function isMobileDevice() {
-    return (window.innerWidth <= 800) && (window.innerHeight <= 600); 
-}
-
-// Existing info box logic
-function hideAllInfoBoxes() {
-    const infoBoxes = document.querySelectorAll('.info-box');
-    infoBoxes.forEach(box => {
-        box.classList.remove('showing');
-    });
-}
-
-
 
 function toggleInfoBox(id) {
     const infoBox = document.getElementById(id);
@@ -96,4 +80,9 @@ if (viewMoreBtn && hiddenBio) {
     });
 }
 
-
+function hideAllInfoBoxes() {
+    const infoBoxes = document.querySelectorAll('.info-box');
+    infoBoxes.forEach(box => {
+        box.classList.remove('showing');
+    });
+}
