@@ -303,9 +303,6 @@ a {
 @media (max-width: 600px) {
     .bio-container {
         height: 400px;
-        max-height: 400px;
-        
-
     }
 }
 
@@ -314,7 +311,6 @@ a {
     .bio-container {
         padding: 20px;
         height: 400px;
-        max-height: 400px;
         /* Adjust other styles for medium screens if needed */
     }
 }
