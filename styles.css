@@ -313,7 +313,7 @@ a {
 /* For screens between 600px and 900px (typically tablets) */
 @media (min-width: 601px) and (max-width: 900px) {
     .bio-container {
-        padding: 20px;
+        padding: 5px;
         max-height: 400px;
         /* Adjust other styles for medium screens if needed */
     }
@@ -334,7 +334,7 @@ a {
 
 @media (max-width: 600px) {
     #viewMoreBtn {
-        padding: 12px 20px; /* Increase the button's padding */
+        padding: 5px 5px; /* Increase the button's padding */
         font-size: 18px; /* Increase font size for better visibility */
     }
 }
