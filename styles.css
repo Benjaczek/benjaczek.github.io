@@ -198,27 +198,26 @@ a {
     position: absolute;
     bottom: 10px;
     width: 100%;
-    text-align: flex;
+    text-align: center;
     font-size: 12px;
     color: lightgrey;
     padding: 5px;
     background: black; /* Optional: Adds a slight white background for better readability */
 }
 
-.big-words-container {
-    display: flex;
-    justify-content: space-between;  /* Spaces the words out evenly */
-    margin-top: 50px;                /* Space from the top elements */
-    margin-bottom: 50px;             /* Space before the "impressum" */
-}
 
-.big-word {
-    font-size: 40px;               /* Big font size */
-    font-weight: bold;             /* Make the text bold */
-    letter-spacing: 1px;          /* Slightly spaced out letters */
-    text-transform: uppercase;    /* Convert text to uppercase (optional if already uppercase) */
-}
 
+.big_words_container {
+    position: absolute;
+    font-weight: bold;
+    bottom: 200px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    color: lightgrey;
+    padding: 5px;
+    background: black; /* Optional: Adds a slight white background for better readability */
+}
 
 
 
@@ -269,6 +268,5 @@ a {
         font-size: 20px; /* Adjust as needed */
     }
 }
-
 
 
