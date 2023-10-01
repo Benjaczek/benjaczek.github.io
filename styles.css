@@ -246,6 +246,9 @@ a {
 
 
 
+
+
+
 @media screen and (max-width: 600px) {
     .name {
         font-size: 1em;
@@ -276,8 +279,6 @@ a {
     }
 
     .bio-container, .art-container, .kontakt-container {
-        width: 80%;/* or any preferred width, e.g., 90% to allow some margin */
-        max-width: none;
         margin-left: auto;
         margin-right: auto;
         padding: 5px; /* Reduced from 20px */
@@ -301,8 +302,7 @@ a {
 @media (max-width: 600px) {
     .bio-container {
         padding: 15px;
-        width: 80%;/* or any preferred width, e.g., 90% to allow some margin */
-        max-width: none;
+        /* Adjust any other styles as needed for smaller screens */
     }
 }
 
@@ -310,8 +310,6 @@ a {
 @media (min-width: 601px) and (max-width: 900px) {
     .bio-container {
         padding: 20px;
-        width: 80%;/* or any preferred width, e.g., 90% to allow some margin */
-        max-width: none;
         /* Adjust other styles for medium screens if needed */
     }
 }
@@ -321,13 +319,9 @@ a {
     .bio-container h1 {
         font-size: 24px; /* or whatever size you find appropriate */
         width: 95%; /* You can adjust this as per your design */
-        width: 80%;/* or any preferred width, e.g., 90% to allow some margin */
-        max-width: none;
     }
     .bio-container p {
         font-size: 16px; /* or another suitable size */
-        width: 80%;/* or any preferred width, e.g., 90% to allow some margin */
-        max-width: none;
     }
 }
 
@@ -335,8 +329,6 @@ a {
     #viewMoreBtn {
         padding: 12px 20px; /* Increase the button's padding */
         font-size: 18px; /* Increase font size for better visibility */
-        width: 80%;/* or any preferred width, e.g., 90% to allow some margin */
-        max-width: none;
     }
 }
 
