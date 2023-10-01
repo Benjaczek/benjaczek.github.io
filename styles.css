@@ -51,20 +51,21 @@ body {
 
 
 /* This is the default state of the dropdown when it's not being hovered over or clicked */
+/* Hide the dropdown by default */
 .vertical {
     display: none;
     text-align: left;
     margin-top: 0.1em;
-    opacity: 0; /* Initially set opacity to 0 (hidden) */
-    transition: opacity 0.9s ease, color 0.9s ease; /* Add a transition for opacity and color */
+    opacity: 0;
+    transition: opacity 0.9s ease, color 0.9s ease;
 }
 
-/* When hovering over the letter-section, display the dropdown */
-.letter-section:hover .vertical {
-    display: block; /* Display the dropdown on hover */
+/* When the parent has the show-dropdown class, display the dropdown */
+.letter-section.show-dropdown .vertical {
+    display: block;
     opacity: 1;
-    color: grey;; /* Change the color to grey */
-    transition: color 0.9s ease, border-color 0.9s ease; /* Add transitions for color and border-color */
+    color: grey;
+    transition: color 0.9s ease, border-color 0.9s ease;
 }
 
 /* This is the state of the dropdown when it's clicked and should "stick" */
