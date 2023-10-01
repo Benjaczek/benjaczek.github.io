@@ -282,6 +282,7 @@ a {
         margin-left: auto;
         margin-right: auto;
         padding: 5px; /* Reduced from 20px */
+        height: 400px
     }
 
     .art-links {
@@ -301,7 +302,9 @@ a {
 /* For screens smaller than 600px (typically smartphones) */
 @media (max-width: 600px) {
     .bio-container {
+        height: 400px;
         max-height: 400px;
+        
 
     }
 }
@@ -310,6 +313,7 @@ a {
 @media (min-width: 601px) and (max-width: 900px) {
     .bio-container {
         padding: 20px;
+        height: 400px;
         max-height: 400px;
         /* Adjust other styles for medium screens if needed */
     }
@@ -320,11 +324,9 @@ a {
     .bio-container h1 {
         font-size: 15px; /* or whatever size you find appropriate */
         width: 95%; /* You can adjust this as per your design */
-        max-height: 400px;
     }
     .bio-container p {
         font-size: 15px; /* or another suitable size */
-        max-height: 400px;
     }
 }
 
