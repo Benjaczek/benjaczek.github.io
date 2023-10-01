@@ -299,18 +299,13 @@ a {
     }
 }
 
-/* For screens smaller than 600px (typically smartphones) */
-@media (max-width: 600px) {
-    .bio-container {
-        height: 400px;
-    }
-}
+
 
 /* For screens between 600px and 900px (typically tablets) */
 @media (min-width: 601px) and (max-width: 900px) {
     .bio-container {
         padding: 20px;
-        height: 400px;
+        
         /* Adjust other styles for medium screens if needed */
     }
 }
