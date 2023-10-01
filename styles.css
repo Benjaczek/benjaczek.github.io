@@ -14,6 +14,7 @@ body {
 
 .name {
     font-size: 3em;
+    margin-bottom: 2rem;
     font-weight: bold;
     text-transform: uppercase;
     display: flex; /* This will align child elements horizontally by default */
@@ -104,11 +105,11 @@ a {
     border: 2px solid white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin-top: 20px;
-    width: 800px;   /* Example width */
-    height: 250px;  /* Example height */
+    width: 80%;   /* Example width */
+    height: 245px;  /* Example height */
     overflow: hidden; 
     height: auto;  /* Auto height for the container */
-    max-height: 220px; 
+    max-height: 245px; 
     max-width: 800px;
     margin: 0 auto;
 }
@@ -245,9 +246,10 @@ a {
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     .name {
-        font-size: 1em;
+        font-size: 2em;
+        margin-bottom: 2rem;
     }
 
     body {
@@ -292,5 +294,40 @@ a {
         font-size: 20px; /* Adjust as needed */
     }
 }
+
+/* For screens smaller than 600px (typically smartphones) */
+@media (max-width: 600px) {
+    .bio-container {
+        padding: 15px;
+        /* Adjust any other styles as needed for smaller screens */
+    }
+}
+
+/* For screens between 600px and 900px (typically tablets) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .bio-container {
+        padding: 20px;
+        /* Adjust other styles for medium screens if needed */
+    }
+}
+
+
+@media (max-width: 600px) {
+    .bio-container h1 {
+        font-size: 24px; /* or whatever size you find appropriate */
+        width: 95%; /* You can adjust this as per your design */
+    }
+    .bio-container p {
+        font-size: 16px; /* or another suitable size */
+    }
+}
+
+@media (max-width: 600px) {
+    #viewMoreBtn {
+        padding: 12px 20px; /* Increase the button's padding */
+        font-size: 18px; /* Increase font size for better visibility */
+    }
+}
+
 
 
