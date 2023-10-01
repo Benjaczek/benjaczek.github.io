@@ -1,27 +1,34 @@
 // Get all menu links
-const menuLinks = document.querySelectorAll('.menu-link');
+/*const menuLinks = document.querySelectorAll('.menu-link');*/
 const bioContainer = document.querySelector('.bio-container');
 const viewMoreBtn = document.getElementById('viewMoreBtn');
 const hiddenBio = document.getElementById('hiddenBio');
+const menuLinks = document.querySelectorAll('.letter-section');
 
 
 
 menuLinks.forEach((menuLink) => {
-    menuLink.addEventListener('click', (event) => {
-        const dropdown = menuLink.querySelector('.vertical');
+    const dropdown = menuLink.querySelector('.vertical');
 
-        if (isMobileDevice() && dropdown) {
-            if (!dropdown.classList.contains('sticky-dropdown')) {
-                // Show dropdown on first click
-                event.preventDefault();
-                dropdown.classList.add('sticky-dropdown');
-            } else {
-                // Navigate on the second click
-                navigateToLink(menuLink.querySelector('a').getAttribute('href'));
-            }
-        } else {
-            // For non-mobile devices, navigate on click
-            navigateToLink(menuLink.querySelector('a').getAttribute('href'));
+    // Toggle the dropdown when the box is clicked
+    menuLink.addEventListener('click', (event) => {
+        // Check if the event target (the clicked element) is the dropdown/link
+        if (event.target === dropdown || dropdown.contains(event.target)) {
+            // If the dropdown or an element inside it is clicked, we don't prevent the default behavior (which allows links to work)
+            return;
+        }
+        
+        // Toggle the show-dropdown class on the letter-section
+        menuLink.classList.toggle('show-dropdown');
+        
+        // Prevent the event from bubbling up further
+        event.stopPropagation();
+    });
+
+    // Optionally, hide the dropdown when clicking anywhere outside the box
+    document.body.addEventListener('click', (event) => {
+        if (!menuLink.contains(event.target)) {
+            menuLink.classList.remove('show-dropdown');
         }
     });
 });
