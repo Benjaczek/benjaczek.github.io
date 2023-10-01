@@ -98,14 +98,19 @@ a {
 
 
 .bio-container {
+    position: relative;
     background-color: black;
     padding: 20px;
     border: 2px solid white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin-top: 20px;
-    width: 400px;   /* Example width */
-    height: 500px;  /* Example height */
-    overflow: auto; /* This will show scroll bar if content overflows */
+    width: 800px;   /* Example width */
+    height: 250px;  /* Example height */
+    overflow: hidden; 
+    height: auto;  /* Auto height for the container */
+    max-height: 220px; 
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 /* Styling for the bio container */
@@ -217,6 +222,25 @@ a {
     color: lightgrey;
     padding: 5px;
     background: black; /* Optional: Adds a slight white background for better readability */
+}
+
+#viewMoreBtn {
+    display: inline-block;
+    padding: 5px 5px;  /* Padding around the text for size */
+    background-color: #333;  /* Dark background color */
+    color: white;  /* Text color */
+    font-size: 16px;  /* Text size */
+    border: none;  /* Remove default borders */
+    border-radius: 5px;  /* Rounded corners */
+    cursor: pointer;  /* Change cursor to hand on hover */
+    transition: background-color 0.3s ease;  /* Transition effect for hover */
+    text-align: center;  /* Center the text */
+    margin-top: 1px;  /* Add space above the button */
+}
+
+/* Change button color on hover */
+#viewMoreBtn:hover {
+    background-color: #555;
 }
 
 
