@@ -251,7 +251,7 @@ a {
 
 @media screen and (max-width: 600px) {
     .name {
-        font-size: 1em;
+        font-size: 1.4em;
         margin-bottom: 2rem;
     }
 
@@ -282,6 +282,10 @@ a {
         margin-left: auto;
         margin-right: auto;
         padding: 5px; /* Reduced from 20px */
+    }
+
+    .big_words_container{
+        font-size: 15px;
     }
 
     .art-links {
