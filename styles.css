@@ -251,7 +251,7 @@ a {
 
 @media screen and (max-width: 600px) {
     .name {
-        font-size: 1.4em;
+        font-size: 1em;
         margin-bottom: 2rem;
     }
 
@@ -320,9 +320,11 @@ a {
     .bio-container h1 {
         font-size: 15px; /* or whatever size you find appropriate */
         width: 95%; /* You can adjust this as per your design */
+        max-height: 400px;
     }
     .bio-container p {
         font-size: 15px; /* or another suitable size */
+        max-height: 400px;
     }
 }
 
