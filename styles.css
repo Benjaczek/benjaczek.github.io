@@ -97,13 +97,15 @@ a {
 }
 
 
-/* Styling for the bio container */
 .bio-container {
-    background-color: black; /* Set the background color to white */
-    padding: 20px; /* Add padding to create space between content and box */
-    border: 2px solid white; /* Add a white border */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
-    margin-top: 20px; /* Add margin to create space between the box and other elements */
+    background-color: black;
+    padding: 20px;
+    border: 2px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    width: 400px;   /* Example width */
+    height: 500px;  /* Example height */
+    overflow: auto; /* This will show scroll bar if content overflows */
 }
 
 /* Styling for the bio container */
