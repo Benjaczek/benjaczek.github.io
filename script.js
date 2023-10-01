@@ -269,7 +269,8 @@ a {
         float: none;  /* reset any floats */
         margin-left: auto;  /* centering */
         margin-right: auto; /* centering */
-        width: 80%;/* or any preferred width, e.g., 90% to allow some margin */
+        width: 85%;/* or any preferred width, e.g., 90% to allow some margin */
+        height: 350px;
         max-width: none;
         align-items: flex-start; /* This vertically aligns the items in the middle of the flex container */
         justify-content: flex-start; /* ensure any desktop-specific width doesn't interfere */
