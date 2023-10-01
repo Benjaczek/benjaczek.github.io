@@ -205,6 +205,20 @@ a {
     background: black; /* Optional: Adds a slight white background for better readability */
 }
 
+.big-words-container {
+    display: flex;
+    justify-content: space-between;  /* Spaces the words out evenly */
+    margin-top: 50px;                /* Space from the top elements */
+    margin-bottom: 50px;             /* Space before the "impressum" */
+}
+
+.big-word {
+    font-size: 40px;               /* Big font size */
+    font-weight: bold;             /* Make the text bold */
+    letter-spacing: 1px;          /* Slightly spaced out letters */
+    text-transform: uppercase;    /* Convert text to uppercase (optional if already uppercase) */
+}
+
 
 
 
