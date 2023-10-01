@@ -1,5 +1,12 @@
 // Get all menu links
 const menuLinks = document.querySelectorAll('.menu-link');
+const bioContainer = document.querySelector('.bio-container');
+const viewMoreBtn = document.getElementById('viewMoreBtn');
+
+viewMoreBtn.addEventListener('click', function() {
+    bioContainer.style.maxHeight = 'none';  // Remove the max-height constraint
+    viewMoreBtn.style.display = 'none';  // Hide the button after expanding
+});
 
 menuLinks.forEach((menuLink) => {
     menuLink.addEventListener('click', (event) => {
@@ -36,6 +43,8 @@ function hideAllInfoBoxes() {
         box.classList.remove('showing');
     });
 }
+
+
 
 function toggleInfoBox(id) {
     const infoBox = document.getElementById(id);
