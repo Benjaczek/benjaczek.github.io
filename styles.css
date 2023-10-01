@@ -248,7 +248,7 @@ a {
 
 @media screen and (max-width: 600px) {
     .name {
-        font-size: 2em;
+        font-size: 1em;
         margin-bottom: 2rem;
     }
 
