@@ -2,6 +2,7 @@
 const menuLinks = document.querySelectorAll('.menu-link');
 const bioContainer = document.querySelector('.bio-container');
 const viewMoreBtn = document.getElementById('viewMoreBtn');
+const hiddenBio = document.getElementById('hiddenBio');
 
 
 
@@ -83,16 +84,16 @@ if (more) {
     });
 }
 
+if (viewMoreBtn && hiddenBio) {
+    viewMoreBtn.addEventListener('click', function() {
+        if (hiddenBio.style.display === 'none') {
+            hiddenBio.style.display = 'block';
+            viewMoreBtn.innerHTML = "View Less";
+        } else {
+            hiddenBio.style.display = 'none';
+            viewMoreBtn.innerHTML = "View More";
+        }
+    });
+}
 
-// Hide the dropdown if clicked outside of a menu link.
-document.addEventListener('click', (event) => {
-    if (!event.target.closest('.menu-link')) {
-        menuLinks.forEach((menuLink) => {
-            const dropdown = menuLink.querySelector('.vertical');
-            if (dropdown && dropdown.classList.contains('sticky-dropdown')) {
-                dropdown.classList.remove('sticky-dropdown');  // Hide the dropdown
-            }
-        });
-    }
-});
 
