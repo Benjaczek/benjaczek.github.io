@@ -263,6 +263,12 @@ a {
         max-height: 25em;
     }
 
+    .big_words_container {
+        font-size: 0.8em;      /* Reduce the font size */
+        bottom: 7em;          /* Adjust the position from the bottom */
+        padding: 0.2em;       /* Adjust padding */
+    }
+
     .kontakt-container {
         width: 100%;
         padding: 1em;
