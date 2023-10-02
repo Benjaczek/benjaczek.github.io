@@ -85,14 +85,17 @@ a {
 .bio-container {
     position: relative;
     background-color: black;
-    padding: 1.25em;
-    border: 0.125em solid white;
-    box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.2);
-    margin-top: 1.25em;
-    width: 80%;
-    height: auto;
-    max-height: 15.3125em;
-    max-width: 50em;
+    padding: 1.25em;  /* previously 20px */
+    border: 0.125em solid white;  /* previously 2px */
+    box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.2);  /* previously 10px */
+    margin-top: 1.25em;  /* previously 20px */
+    width: 90%;  
+    overflow: hidden; 
+    /* Remove these:
+    height: auto; 
+    max-height: 15.3125em;  /* previously 245px */
+    */
+    max-width: 50em;  /* previously 800px */
     margin: 0 auto;
 }
 
@@ -259,9 +262,7 @@ a {
 }
 
 @media (max-width: 37.5em) {
-    .bio-container {
-        max-height: 25em;
-    }
+    
 
     .big_words_container {
         font-size: 0.8em;      /* Reduce the font size */
