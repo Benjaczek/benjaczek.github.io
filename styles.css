@@ -28,7 +28,7 @@ body {
     display: inline-block;
     text-align: center;
     position: relative;
-    margin-right: 50px; /* Add margin between each name */
+    margin-right: 30px; /* Add margin between each name */
 }
 
 .horizontal {
@@ -251,7 +251,7 @@ a {
 
 @media screen and (max-width: 600px) {
     .name {
-        font-size: 1em;
+        font-size: 0.9em;
         margin-bottom: 2rem;
     }
 
@@ -261,7 +261,7 @@ a {
     }
 
     .letter-section {
-        margin-right: 20px; /* Adjust the margin for mobile */
+        margin-right: 1em; /* Adjust the margin for mobile */
     }
 
     .boxed {
