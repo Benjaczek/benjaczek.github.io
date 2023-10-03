@@ -76,11 +76,11 @@ if (production) {
     });
 }
 
-let more = document.getElementById('sound-art');
-if (sound-art) {
-    sound-art.addEventListener('click', function() {
+let soundArt = document.getElementById('soundArt');
+if (soundArt) {
+    soundArt.addEventListener('click', function() {
         hideAllInfoBoxes();
-        toggleInfoBox('sound-art-info');
+        toggleInfoBox('soundArt-info');
     });
 }
 
