@@ -119,6 +119,7 @@ a {
 .art-link {
     font-size: 1.5em;
     transition: color 0.3s;
+    justify-content: space-evenly;
 }
 
 .art-link:hover {
@@ -135,7 +136,7 @@ a {
     padding: 1.25em;
     box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
     margin-top: 1.25em;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .info-box.showing {
