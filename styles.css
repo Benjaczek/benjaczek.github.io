@@ -255,11 +255,11 @@ a {
     }
 
     .art-links {
-        font-size: 1em;
+        font-size: 0.9em;
     }
 
     .art-link {
-        font-size: 1.125em;
+        font-size: 0.9em;
         transition: color 0.3s;
     }
 
