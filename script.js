@@ -60,27 +60,27 @@ if (viewMoreBtn) {
     });
 }
 
-let productions = document.getElementById('productions');
-if (productions) {
-    productions.addEventListener('click', function() {
+let composition = document.getElementById('composition');
+if (composition) {
+    composition.addEventListener('click', function() {
         hideAllInfoBoxes();
-        toggleInfoBox('productions-info');
+        toggleInfoBox('composition-info');
     });
 }
 
-let compositions = document.getElementById('compositions');
-if (compositions) {
-    compositions.addEventListener('click', function() {
+let production = document.getElementById('production');
+if (production) {
+    producion.addEventListener('click', function() {
         hideAllInfoBoxes();
-        toggleInfoBox('compositions-info');
+        toggleInfoBox('production-info');
     });
 }
 
-let more = document.getElementById('more');
-if (more) {
-    more.addEventListener('click', function() {
+let more = document.getElementById('sound-art');
+if (sound-art) {
+    sound-art.addEventListener('click', function() {
         hideAllInfoBoxes();
-        toggleInfoBox('more-info');
+        toggleInfoBox('sound-art-info');
     });
 }
 
