@@ -60,7 +60,7 @@ if (viewMoreBtn) {
     });
 }
 
-let composition = document.getElementById('composition');
+let composition = document.getElementById('compositions');
 if (composition) {
     composition.addEventListener('click', function() {
         hideAllInfoBoxes();
@@ -68,7 +68,7 @@ if (composition) {
     });
 }
 
-let production = document.getElementById('production');
+let production = document.getElementById('productions');
 if (production) {
     producion.addEventListener('click', function() {
         hideAllInfoBoxes();
@@ -76,7 +76,7 @@ if (production) {
     });
 }
 
-let soundArt = document.getElementById('soundArt');
+let soundArt = document.getElementById('soundArts');
 if (soundArt) {
     soundArt.addEventListener('click', function() {
         hideAllInfoBoxes();
