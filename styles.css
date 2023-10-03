@@ -106,6 +106,7 @@ a {
     border: 0.125em solid white;
     box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.2);
     margin-top: 1.25em;
+    justify-content: space-evenly;
 }
 
 .art-links {
@@ -134,6 +135,7 @@ a {
     padding: 1.25em;
     box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
     margin-top: 1.25em;
+    justify-content: space-evenly;
 }
 
 .info-box.showing {
