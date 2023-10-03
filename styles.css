@@ -110,7 +110,7 @@ a {
 
 .art-links {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 1.25em 0;
     cursor: pointer;
 }
