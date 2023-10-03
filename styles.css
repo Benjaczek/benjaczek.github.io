@@ -240,8 +240,8 @@ a {
         margin-right: auto;
         width: 90%;
         max-width: none;
-        align-items: flex-start;
-        justify-content: space-evenly;
+        /*align-items: flex-start;
+        justify-content: space-evenly;*/
     }
     
 
