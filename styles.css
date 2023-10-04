@@ -151,7 +151,7 @@ a {
     position: relative;
     padding-bottom: 56.25%;
     padding-top: 1.5625em;
-    height: 0;
+    /*height: 0;*/
     overflow: hidden;
 }
 
