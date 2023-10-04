@@ -268,10 +268,17 @@ a {
     h1 {
         font-size: 1.25em;
     }
+
+    .info-box h2 {
+    font-size: 1.25em;  
+    }
 }
 
 @media (max-width: 37.5em) {
-    
+
+    .info-box h2 {
+        font-size: 0.8em;
+    }
 
     .big_words_container {
         font-size: 0.8em;      /* Reduce the font size */
