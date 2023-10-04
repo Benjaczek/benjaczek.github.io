@@ -218,6 +218,14 @@ a {
     background-color: #555;
 }
 
+img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
 @media screen and (max-width: 37.5em) {
     .name {
         font-size: 0.9em;
@@ -237,7 +245,12 @@ a {
         padding: 0.1875em;
     }
 
-
+    img {
+        /* Adjustments for phone screens go here */
+        max-width: 90%; /* Example: set to 90% of the container width */
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 
     .fixed-container {
         float: none;
