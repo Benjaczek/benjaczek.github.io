@@ -9,7 +9,7 @@ body {
     height: 12.5em;
     padding-top: 9.375em;
 
-    background-image: url('path-to-your-image.jpg'); /* Replace 'path-to-your-image.jpg' with the actual path to your image */
+    background-image: url('www.erik-winter.com_6.smaller.jpg'); /* Replace 'path-to-your-image.jpg' with the actual path to your image */
     background-size: auto; /* This will ensure the image covers the entire viewport */
     background-position: center; /* This centers the background image */
     background-repeat: no-repeat; /* This ensures the image doesn't repeat */
