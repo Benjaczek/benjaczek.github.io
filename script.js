@@ -70,7 +70,7 @@ if (composition) {
 
 let production = document.getElementById('productions');
 if (production) {
-    producion.addEventListener('click', function() {
+    production.addEventListener('click', function() {
         hideAllInfoBoxes();
         toggleInfoBox('production-info');
     });
