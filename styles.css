@@ -6,7 +6,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
-    padding-top: 6em;
+    padding-top: 3em;
 
     background-image: url('www.erik-winter.com_6.smaller.jpg'); /* Adjust the path if necessary */
     background-size: contain; /* Now the image should cover the entire viewport */
