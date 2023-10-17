@@ -63,7 +63,7 @@ body {
     display: block;
     opacity: 1;
     border-color: grey;
-    color: white;
+    color: grey;
     transition: color 0.9s ease, border-color 0.9s ease;
 }
 
