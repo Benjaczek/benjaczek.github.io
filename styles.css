@@ -119,13 +119,14 @@ a {
     justify-content: space-between;
     padding: 1.25em 0;
     cursor: pointer;
+    color: grey;
 }
 
 .art-link {
     font-size: 1.5em;
     transition: color 0.3s;
     justify-content: space-evenly;
-    color: #777;
+    color: grey;
 }
 
 .art-link:hover {
