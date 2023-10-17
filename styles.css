@@ -171,8 +171,8 @@ a {
 }
 
 .button {
-    color: white;
-    border: 0.0625em solid white;
+    color: grey;
+    border: 0.0625em solid gray;
     padding: 0.625em 0.9375em;
     display: inline-block;
     cursor: pointer;
@@ -180,8 +180,8 @@ a {
 }
 
 .button:hover, .button:active {
-    color: grey;
-    border-color: grey;
+    color: white;
+    border-color: white;
 }
 
 .impressum {
