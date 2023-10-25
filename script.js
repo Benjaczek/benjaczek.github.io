@@ -96,4 +96,18 @@ if (viewMoreBtn && hiddenBio) {
     });
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    var letterSections = document.querySelectorAll('.letter-section');
+    var overlay = document.querySelector('.overlay');
+
+    letterSections.forEach(function(section) {
+        section.addEventListener('mouseover', function() {
+            overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+        });
+        section.addEventListener('mouseout', function() {
+            overlay.style.backgroundColor = 'rgba(0, 0, 0, 0)';
+        });
+    });
+});
+
 
