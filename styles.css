@@ -245,9 +245,6 @@ img {
     transition: background-color 0.9s ease;
 }
 
-.letter-section:hover ~ .overlay {
-    background-color: rgba(0, 0, 0, 0.7); /* Schwarzer Hintergrund mit 70% Deckkraft */
-}
 
 @media screen and (max-width: 37.5em) {
     .name {
