@@ -298,6 +298,21 @@ img {
     }
 }
 
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Transparenter Hintergrund */
+    z-index: -1; /* Damit es hinter allem anderen liegt */
+    transition: background-color 0.9s ease;
+}
+
+.letter-section:hover ~ .overlay {
+    background-color: rgba(0, 0, 0, 0.7); /* Schwarzer Hintergrund mit 70% Deckkraft */
+}
+
 @media (max-width: 37.5em) {
 
     .info-box h2 {
