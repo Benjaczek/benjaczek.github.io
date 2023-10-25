@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     letterSections.forEach(function(section) {
         section.addEventListener('mouseover', function() {
-            overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+            overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
         });
         section.addEventListener('mouseout', function() {
             overlay.style.backgroundColor = 'rgba(0, 0, 0, 0)';
