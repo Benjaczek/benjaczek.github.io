@@ -97,7 +97,7 @@ if (viewMoreBtn && hiddenBio) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    var letterSections = document.querySelectorAll('.letter-section');
+    var letterSections = document.querySelectorAll('.letter-section, .art-link, .info-box');
     var overlay = document.querySelector('.overlay');
 
     letterSections.forEach(function(section) {
