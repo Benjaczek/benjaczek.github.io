@@ -96,6 +96,8 @@ if (viewMoreBtn && hiddenBio) {
     });
 }
 
+
+
 document.addEventListener('DOMContentLoaded', function() {
     var letterSections = document.querySelectorAll('.letter-section, .art-link, .info-box');
     var overlay = document.querySelector('.overlay');
@@ -110,7 +112,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
+function showWorkDetails(workId) {
+  var details = document.getElementById(workId + '-details');
+  if (details) {
+    details.style.display = 'block';
+    details.classList.add('showing'); // Add the showing class if you have any transition effects applied.
+  }
+}
 
 // Remove the inline 'onclick' in your HTML and add this to your script.js
 document.addEventListener('DOMContentLoaded', function() {
