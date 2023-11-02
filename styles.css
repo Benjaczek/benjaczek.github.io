@@ -180,6 +180,9 @@ a {
     position: relative;
 }
 
+.close-btn {
+    /* your styles for the button */
+}
 
 .video-container {
     position: relative;
