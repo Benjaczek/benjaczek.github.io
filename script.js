@@ -132,28 +132,28 @@ function closeWorkDetails(workId) {
 document.querySelectorAll('.work-btn').forEach(button => {
   button.addEventListener('click', function() {
     var infoBox = this.nextElementSibling;
+    // First close all other info boxes
+    document.querySelectorAll('.info-box').forEach(box => {
+      if (box !== infoBox) {
+        box.style.maxHeight = '0';
+        box.classList.remove('showing');
+      }
+    });
 
-    // Force browser to recalculate the height if infoBox is hidden
-    if (!infoBox.classList.contains('showing')) {
-      infoBox.style.display = 'block'; // Temporarily show to measure
-      infoBox.style.visibility = 'hidden'; // Make it not visible but still render the layout
-      infoBox.style.maxHeight = 'none'; // Allow it to take as much space as needed to calculate height
-      // Force reflow to ensure the proper height is calculated
-      infoBox.offsetHeight; 
-    }
-
-    // Toggle visibility
     if (infoBox.classList.contains('showing')) {
-      // When hiding, reset max-height to 0
+      // Close the current info box
       infoBox.style.maxHeight = '0';
+      infoBox.classList.remove('showing');
     } else {
-      // When showing, set max-height to the scrollHeight of the content
-      infoBox.style.visibility = 'visible'; // Make it visible again
+      // Open the new info box
+      // Show the element to measure scrollHeight
+      infoBox.style.display = 'block'; 
       infoBox.style.maxHeight = infoBox.scrollHeight + 'px';
+      // Delay adding 'showing' class until after max-height is set
+      setTimeout(() => {
+        infoBox.classList.add('showing');
+      }, 10); // Timeout allows max-height to apply
     }
-
-    // Toggle the 'showing' class regardless of the current state
-    infoBox.classList.toggle('showing');
   });
 });
 
