@@ -399,8 +399,14 @@ img {
         justify-content: space-evenly;*/
     }
     
-
-    .bio-container, .art-container, .kontakt-container {
+    .bio-container {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0.3125em;
+        overflow: scroll;
+    }
+    
+    .art-container, .kontakt-container {
         margin-left: auto;
         margin-right: auto;
         padding: 0.3125em;
