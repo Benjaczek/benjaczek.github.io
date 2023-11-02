@@ -448,7 +448,7 @@ img {
         margin: auto;
         padding: 1em; /* Combined values from both media queries */
         width: 100%; /* Combined values from both media queries */
-        transform: translateY(-1em);
+        transform: translateY(-0.1em);
     }
 
     .art-links {
