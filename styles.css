@@ -450,6 +450,7 @@ img {
 
     .art-links {
         font-size: 0.9em;
+        transform: translateY(-4em);
     }
 
     .art-link {
