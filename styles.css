@@ -133,6 +133,7 @@ a {
     
     max-width: 50em;  /* previously 800px */
     margin: 0 auto;
+    transform: translateY(-50px);
 }
 
 .art-container, .kontakt-container {
