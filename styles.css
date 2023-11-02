@@ -284,6 +284,55 @@ img {
     transition: background-color 0.9s ease;
 }
 
+.work-item {
+  cursor: pointer;
+  margin-bottom: 1.25em; /* Space out the work items */
+  transition: transform 0.3s ease; /* Smooth transformation on hover */
+}
+
+.work-item:hover {
+  transform: translateY(-0.3125em); /* Slight upward lift on hover */
+}
+
+.work-details {
+  display: none; /* Start with the details hidden */
+  background-color: #1c1c1c; /* Slightly lighter than black for contrast */
+  color: white;
+  padding: 1.25em;
+  border: 0.125em solid white;
+  box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.2);
+  position: absolute; /* Overlay the details on top of the work items */
+  z-index: 10; /* Ensure it's on top of other elements */
+  width: 80%; /* Match the width of your bio-container */
+  max-width: 50em; /* Maximum width to ensure readability */
+  top: 0; /* Align it with the top of the parent */
+  left: 50%; /* Center it horizontally */
+  transform: translateX(-50%); /* Ensure it's centered with translate */
+  transition: all 0.3s ease; /* Smooth transition for display and other properties */
+}
+
+.work-item:hover .work-details {
+  display: block; /* Show the details when the item is hovered */
+}
+
+/* If you decide to use JavaScript to toggle a class for showing work details */
+.work-details.active {
+  display: block; /* Change display to block to show the content */
+  animation: fadeIn 0.3s; /* Optional: add a fade-in animation */
+}
+
+/* Simple fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Adjust the .overlay to become visible when work details are active */
+.overlay.active {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black overlay */
+  z-index: 5; /* Below the work details but above other content */
+}
+
 
 @media screen and (max-width: 37.5em) {
     .name {
