@@ -201,17 +201,17 @@ a {
 */
 
 .impressum {
-    position: fixed; /* Fixed positioning relative to the viewport */
-    left: 0; /* Start from the left edge of the viewport */
-    right: 0; /* Extend to the right edge of the viewport */
-    bottom: 0; /* Align to the bottom of the viewport */
-    width: 100%; /* Span the full width of the viewport */
-    text-align: center; /* Center the text inside the box */
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
     font-size: 0.75em;
     color: lightgrey;
     padding: 0.3125em;
     background: black;
-    z-index: 1000; /* Ensures it stays above other content */
+    z-index: 1000; /* Make sure it stays on top of other content */
 }
 
 .big_words_container {
