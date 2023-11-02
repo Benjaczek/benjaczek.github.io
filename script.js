@@ -128,3 +128,21 @@ function closeWorkDetails(workId) {
   }
 }
 
+
+document.querySelectorAll('.work-btn').forEach(button => {
+  button.addEventListener('click', function() {
+    // Find the .info-box for this button
+    var infoBox = this.nextElementSibling;
+
+    if(infoBox.classList.contains('showing')) {
+      // If it's already showing, we want to hide it
+      infoBox.style.maxHeight = null;
+      infoBox.classList.remove('showing');
+    } else {
+      // If it's not showing, we want to show it
+      infoBox.classList.add('showing');
+      infoBox.style.maxHeight = infoBox.scrollHeight + "px";
+    }
+  });
+});
+
