@@ -85,7 +85,7 @@ body {
 .letter-section:hover .vertical {
     color: grey;
     opacity: 1; /* Added - make content fully opaque on hover */
-    max-height: 500px; /* Added - set to max height of your content */
+    /*max-height: 500px; /* Added - set to max height of your content */
     visibility: visible; /* Added - make element visible */
     transition: color 0.9s ease, opacity 0.9s ease, max-height 0.9s ease, visibility 0s; /* Modified - transition for visibility without delay */
 }
