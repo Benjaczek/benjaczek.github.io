@@ -116,27 +116,38 @@ function showWorkDetails(workId) {
   var details = document.getElementById(workId + '-details');
   if (details) {
     details.style.display = 'block';
-    details.classList.add('showing'); // Add the showing class if you have any transition effects applied.
+    details.classList.add('showing');
+  }
+}
+
+// Function to close work details
+function closeWorkDetails(workId) {
+  var details = document.getElementById(workId + '-details');
+  if (details) {
+    details.style.display = 'none';
+    details.classList.remove('showing');
   }
 }
 
 // Remove the inline 'onclick' in your HTML and add this to your script.js
 document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.close-btn').forEach(button => {
-        button.addEventListener('click', function() {
-            var workId = this.getAttribute('data-work');
-            closeWorkDetails(workId);
-        });
+   
+    document.querySelectorAll('.work-item').forEach(item => {
+    item.addEventListener('click', function() {
+      var workId = this.getAttribute('data-work-id');
+      showWorkDetails(workId);
     });
+  });
+
+  // Event listeners for closing work details
+  document.querySelectorAll('.close-btn').forEach(button => {
+    button.addEventListener('click', function() {
+      var workId = this.getAttribute('data-work');
+      closeWorkDetails(workId);
+    });
+  });
 });
 
-function closeWorkDetails(workId) {
-  var details = document.getElementById(workId + '-details');
-  if (details) {
-    details.style.display = 'none';
-    details.classList.remove('showing'); // Remove the showing class if you have any transition effects applied.
-  }
-}
 
 
 
