@@ -321,7 +321,7 @@ img {
 
 .work-item {
   cursor: pointer;
-  margin-bottom: 7em; /* Space out the work items */
+  margin-bottom: 2em; /* Space out the work items */
   transition: transform 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease; /* Smooth transformation on hover */
   font-size: 1em; /* Adjust the font size as needed */
 }
