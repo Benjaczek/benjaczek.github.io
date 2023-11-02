@@ -147,7 +147,7 @@ a {
     box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.2);
     margin-top: 1.25em;
     justify-content: space-evenly;
-    transform: translateY(-20em);
+    transform: translateY(-10em);
 }
 
 
@@ -157,7 +157,7 @@ a {
     padding: 1.25em 0;
     cursor: pointer;
     color: grey;
-    transform: translateY(-20em);
+    transform: translateY(-10em);
 }
 
 .art-link {
@@ -184,7 +184,7 @@ a {
     margin-bottom: 15em;
     justify-content: space-evenly;
     max-width: 100%;  /* Add this */
-    transform: translateY(-20em);
+    transform: translateY(-10em);
    
 }
 
@@ -341,7 +341,7 @@ img {
   box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.2);
   position: absolute; /* Overlay the details on top of the work items */
   z-index: 10; /* Ensure it's on top of other elements */
-  width: 80%; /* Match the width of your bio-container */
+  width: 150%; /* Match the width of your bio-container */
   max-width: 50em; /* Maximum width to ensure readability */
   top: 0; /* Align it with the top of the parent */
   left: 50%; /* Center it horizontally */
