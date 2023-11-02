@@ -76,18 +76,17 @@ body {
     text-align: left;
     margin-top: 0.1em;
     opacity: 0;
-    max-height: 0; /* Added - start with max-height 0 */
-    overflow: hidden; /* Added - prevent content from spilling out */
-    visibility: hidden; /* Added - start with the element invisible */
-    transition: opacity 0.9s ease, color 0.9s ease, max-height 0.9s ease, visibility 0s 0.9s; /* Modified - transition for visibility and max-height */
+    max-height: none; 
+    overflow: hidden; /* Keep content from showing when max-height is 0 */
+    visibility: hidden; /* Start with the element invisible */
+    transition: opacity 0.9s, max-height 0.9s, visibility 0.9s; /* transition for visibility might need to be tweaked */
 }
 
 .letter-section:hover .vertical {
     color: grey;
-    opacity: 1; /* Added - make content fully opaque on hover */
-    /*max-height: 500px; /* Added - set to max height of your content */
-    visibility: visible; /* Added - make element visible */
-    transition: color 0.9s ease, opacity 0.9s ease, max-height 0.9s ease, visibility 0s; /* Modified - transition for visibility without delay */
+    opacity: 1; /* Make content fully opaque on hover */
+    visibility: visible; /* Make element visible */
+    transition: opacity 0.9s, max-height 0.9s, visibility 0s 0s; /* Transition for visibility should have no delay when hovering */
 }
 
 
