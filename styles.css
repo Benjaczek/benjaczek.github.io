@@ -15,6 +15,10 @@ body {
     background-attachment: fixed;
 }
 
+.content-container {
+  padding-bottom: 2em; /* Adjust the value so that it's enough to accommodate the height of the .impressum */
+}
+
 .name {
     font-size: 3em;
     margin-bottom: 2em;
