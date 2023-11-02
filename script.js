@@ -133,13 +133,22 @@ document.querySelectorAll('.work-btn').forEach(button => {
   button.addEventListener('click', function() {
     var infoBox = this.nextElementSibling;
 
+    // Force browser to recalculate the height if infoBox is hidden
+    if (!infoBox.classList.contains('showing')) {
+      infoBox.style.display = 'block'; // Temporarily show to measure
+      infoBox.style.visibility = 'hidden'; // Make it not visible but still render the layout
+      infoBox.style.maxHeight = 'none'; // Allow it to take as much space as needed to calculate height
+      // Force reflow to ensure the proper height is calculated
+      infoBox.offsetHeight; 
+    }
+
+    // Toggle visibility
     if (infoBox.classList.contains('showing')) {
       // When hiding, reset max-height to 0
       infoBox.style.maxHeight = '0';
     } else {
       // When showing, set max-height to the scrollHeight of the content
-      // You might need to temporarily show the element to measure it if it's not visible
-      infoBox.style.display = 'block'; // Temporarily show to measure
+      infoBox.style.visibility = 'visible'; // Make it visible again
       infoBox.style.maxHeight = infoBox.scrollHeight + 'px';
     }
 
@@ -147,5 +156,4 @@ document.querySelectorAll('.work-btn').forEach(button => {
     infoBox.classList.toggle('showing');
   });
 });
-
 
