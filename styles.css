@@ -137,7 +137,7 @@ a {
     max-width: 55em;  /* previously 800px */
     
     margin: 0 auto;
-    transform: translateY(-100px);
+    transform: translateY(-5em);
 }
 
 .art-container, .kontakt-container {
@@ -147,7 +147,7 @@ a {
     box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.2);
     margin-top: 1.25em;
     justify-content: space-evenly;
-    transform: translateY(-10em);
+    transform: translateY(-5em);
 }
 
 
@@ -157,7 +157,7 @@ a {
     padding: 1.25em 0;
     cursor: pointer;
     color: grey;
-    transform: translateY(-10em);
+    transform: translateY(-5em);
 }
 
 .art-link {
@@ -184,7 +184,7 @@ a {
     margin-bottom: 15em;
     justify-content: space-evenly;
     max-width: 100%;  /* Add this */
-    transform: translateY(-10em);
+    transform: translateY(-5em);
    
 }
 
@@ -321,7 +321,7 @@ img {
 
 .work-item {
   cursor: pointer;
-  margin-bottom: 1.25em; /* Space out the work items */
+  margin-bottom: 7em; /* Space out the work items */
   transition: transform 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease; /* Smooth transformation on hover */
   font-size: 1em; /* Adjust the font size as needed */
 }
@@ -347,7 +347,6 @@ img {
   left: 50%; /* Center it horizontally */
   transform: translateX(-50%); /* Ensure it's centered with translate */
   transition: all 0.3s ease; /* Smooth transition for display and other properties */
-    margin-bottom: 5em;
 }
 
 .work-item:hover .work-details {
