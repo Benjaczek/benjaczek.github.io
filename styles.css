@@ -223,6 +223,25 @@ a {
     overflow: hidden;
 }
 
+.video-container2 {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 1.5625em;
+    /*height: 0;*/
+    overflow: hidden;
+}
+
+.video-container2 iframe {
+    /* Scale down the iframe content */
+    transform: scale(0.5);
+    /* Correct the iframe position after scaling */
+    transform-origin: 0 0;
+    /* Make sure the scaled iframe's dimensions fit its container */
+    width: 200%;
+    height: 200%;
+    border: none;
+}
+
 .video-container iframe {
     position: absolute;
     top: 0;
