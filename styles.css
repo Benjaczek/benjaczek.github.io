@@ -35,7 +35,7 @@ body {
     display: inline-block;
     text-align: center;
     position: relative;
-   /* margin-right: 1.875em;*/
+    margin-right: 2em;
 }
 
 .horizontal {
