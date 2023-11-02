@@ -398,14 +398,14 @@ img {
 
 @media screen and (max-width: 37.5em) {
     .name {
-        font-size: 1.05em;
+        font-size: 1.4em;
         margin-bottom: 2em;
     }
 
     body {
         overflow-x: hidden;
         padding-top: 3.125em;
-          height: 500px;
+          
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
@@ -429,23 +429,22 @@ img {
 
     .fixed-container {
         float: none;
-        margin-left: auto;
-        margin-right: auto;
+        margin: auto;
         width: 90%;
         max-width: none;
     }
     
     .bio-container {
-        margin-left: auto;
-        margin-right: auto;
+        margin: auto;
         padding: 0.3125em;
         overflow: scroll;
         transform: translateY(-1em);
     }
     
     .art-container, .kontakt-container {
-        margin-left: auto;
-        margin-right: auto;
+        /*margin-left: auto;
+        margin-right: auto;*/
+        margin: auto;
         padding: 1em; /* Combined values from both media queries */
         width: 100%; /* Combined values from both media queries */
         transform: translateY(-1em);
