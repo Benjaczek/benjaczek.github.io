@@ -152,6 +152,7 @@ a {
     padding: 1.25em 0;
     cursor: pointer;
     color: grey;
+    transform: translateY(-100px);
 }
 
 .art-link {
