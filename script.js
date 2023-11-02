@@ -112,21 +112,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-// JavaScript to show work details
-function showWorkDetails(workId) {
-  var details = document.getElementById(workId + '-details');
-  if (details) {
-    details.style.display = 'block'; // Or use 'flex', depending on your layout
-  }
-}
+// Remove the inline 'onclick' in your HTML and add this to your script.js
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.close-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            var workId = this.getAttribute('data-work');
+            closeWorkDetails(workId);
+        });
+    });
+});
 
-// JavaScript to close work details
 function closeWorkDetails(workId) {
   var details = document.getElementById(workId + '-details');
   if (details) {
     details.style.display = 'none';
+    details.classList.remove('showing'); // Remove the showing class if you have any transition effects applied.
   }
 }
+
 
 
 document.querySelectorAll('.work-btn').forEach(button => {
