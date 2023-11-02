@@ -54,7 +54,7 @@ body {
 
 .vertical {
     color: white;
-    /*display: none;*/
+    display: block;
     opacity: 0;
     text-align: left;
     margin-top: 0.1em;
@@ -64,10 +64,10 @@ body {
 
 .letter-section:hover .vertical {
     color: grey;
-    display: block;
+    /*display: block; */
     opacity: 1;
     border-color: grey;
-    transition: color 0.9s ease, border-color 0.9s ease;
+    transition: opacity 0.9s ease, color 0.9s ease, border-color 0.9s ease;
 }
 
 /*
