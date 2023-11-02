@@ -225,18 +225,20 @@ a {
 
 .video-container2 {
     position: relative;
-    padding-bottom: 56.25%;
+    /* Remove the padding-bottom if setting explicit height */
     padding-top: 1.5625em;
-    /*height: 0;*/
+    height: 0; /* Set to 0 to use the height of the iframe */
     overflow: hidden;
 }
 
 .video-container2 iframe {
-    /* Scale down the iframe content */
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Set the scale as needed */
     transform: scale(0.5);
-    /* Correct the iframe position after scaling */
     transform-origin: 0 0;
-    /* Make sure the scaled iframe's dimensions fit its container */
+    /* Double the width and height to maintain the aspect ratio after scaling */
     width: 200%;
     height: 200%;
     border: none;
