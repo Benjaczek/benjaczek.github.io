@@ -178,7 +178,6 @@ a {
     opacity: 1;
     visibility: visible;
     position: relative;
-    max-height: 50em; /* adjust this value as needed */
 }
 
 .video-container {
