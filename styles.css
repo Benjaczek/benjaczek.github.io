@@ -137,7 +137,7 @@ a {
     max-width: 55em;  /* previously 800px */
     
     margin: 0 auto;
-    transform: translateY(-5em);
+    transform: translateY(-8em);
 }
 
 .art-container, .kontakt-container {
@@ -147,7 +147,7 @@ a {
     box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.2);
     margin-top: 1.25em;
     justify-content: space-evenly;
-    transform: translateY(-5em);
+    transform: translateY(-8em);
 }
 
 
@@ -157,7 +157,7 @@ a {
     padding: 1.25em 0;
     cursor: pointer;
     color: grey;
-    transform: translateY(-5em);
+    transform: translateY(-8em);
 }
 
 .art-link {
@@ -184,7 +184,7 @@ a {
     margin-bottom: 15em;
     justify-content: space-evenly;
     max-width: 100%;  /* Add this */
-    transform: translateY(-5em);
+    transform: translateY(-8em);
    
 }
 
