@@ -62,7 +62,7 @@ body {
     display: block;
     opacity: 0;
     text-align: left;
-    margin-top: 0.1em;
+    margin-top: 0.01em;
     opacity: 0;
     transition: opacity 0.9s ease, color 0.9s ease;
 }
