@@ -399,7 +399,7 @@ img {
 @media screen and (max-width: 37.5em) {
     .name {
         font-size: 0.9em;
-        margin-bottom: 2em;
+        margin-bottom: 1em;
     }
 
     body {
@@ -429,7 +429,7 @@ img {
         margin-right: auto;
         width: 90%;
         max-width: none;
-        transform: translateY(-4em);
+        transform: translateY(-2em);
     }
     
     .bio-container {
@@ -437,7 +437,7 @@ img {
         margin-right: auto;
         padding: 0.3125em;
         overflow: scroll;
-        transform: translateY(-4em);
+        transform: translateY(-2em);
     }
     
     .art-container, .kontakt-container {
@@ -445,7 +445,7 @@ img {
         margin-right: auto;
         padding: 1em; /* Combined values from both media queries */
         width: 100%; /* Combined values from both media queries */
-        transform: translateY(-4em);
+        transform: translateY(-2em);
     }
 
     .art-links {
