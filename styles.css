@@ -398,8 +398,9 @@ img {
 
 @media screen and (max-width: 37.5em) {
     .name {
-        font-size: 1.4em;
+        font-size: 1.1em;
         margin-bottom: 2em;
+       /* margin-right: 0.5em;*/
     }
 
     body {
