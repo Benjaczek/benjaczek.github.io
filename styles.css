@@ -432,7 +432,7 @@ img {
 }
 
 
-
+/*
 @media (max-width: 37.5em) {
 
     .info-box h2 {
@@ -440,9 +440,9 @@ img {
     }
 
     .big_words_container {
-        font-size: 0.8em;      /* Reduce the font size */
-        bottom: 7em;          /* Adjust the position from the bottom */
-        padding: 0.2em;       /* Adjust padding */
+        font-size: 0.8em;     
+        bottom: 7em;         
+        padding: 0.2em;      
     }
 
     .kontakt-container {
@@ -484,3 +484,4 @@ img {
         font-size: 0.9em;
     }
 }
+/*
