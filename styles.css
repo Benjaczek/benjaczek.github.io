@@ -187,6 +187,7 @@ a {
     border-color: white;
 }
 
+/*
 .impressum {
     position: absolute;
     bottom: 0.625em;
@@ -196,6 +197,21 @@ a {
     color: lightgrey;
     padding: 0.3125em;
     background: black;
+}
+*/
+
+.impressum {
+    position: fixed; /* Fixed positioning relative to the viewport */
+    left: 0; /* Start from the left edge of the viewport */
+    right: 0; /* Extend to the right edge of the viewport */
+    bottom: 0; /* Align to the bottom of the viewport */
+    width: 100%; /* Span the full width of the viewport */
+    text-align: center; /* Center the text inside the box */
+    font-size: 0.75em;
+    color: lightgrey;
+    padding: 0.3125em;
+    background: black;
+    z-index: 1000; /* Ensures it stays above other content */
 }
 
 .big_words_container {
