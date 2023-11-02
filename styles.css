@@ -269,7 +269,7 @@ a {
     color: lightgrey;
     padding: 1em 0; 
     background: black;
-    z-index: 1000; /* Make sure it stays on top of other content */
+    /*z-index: 1000; /* Make sure it stays on top of other content */
 }
 
 .big_words_container {
