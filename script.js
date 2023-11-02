@@ -111,3 +111,20 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+
+// JavaScript to show work details
+function showWorkDetails(workId) {
+  var details = document.getElementById(workId + '-details');
+  if (details) {
+    details.style.display = 'block'; // Or use 'flex', depending on your layout
+  }
+}
+
+// JavaScript to close work details
+function closeWorkDetails(workId) {
+  var details = document.getElementById(workId + '-details');
+  if (details) {
+    details.style.display = 'none';
+  }
+}
+
