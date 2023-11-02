@@ -131,18 +131,21 @@ function closeWorkDetails(workId) {
 
 document.querySelectorAll('.work-btn').forEach(button => {
   button.addEventListener('click', function() {
-    // Find the .info-box for this button
     var infoBox = this.nextElementSibling;
 
-    if(infoBox.classList.contains('showing')) {
-      // If it's already showing, we want to hide it
-      infoBox.style.maxHeight = null;
-      infoBox.classList.remove('showing');
+    if (infoBox.classList.contains('showing')) {
+      // When hiding, reset max-height to 0
+      infoBox.style.maxHeight = '0';
     } else {
-      // If it's not showing, we want to show it
-      infoBox.classList.add('showing');
-      infoBox.style.maxHeight = infoBox.scrollHeight + "px";
+      // When showing, set max-height to the scrollHeight of the content
+      // You might need to temporarily show the element to measure it if it's not visible
+      infoBox.style.display = 'block'; // Temporarily show to measure
+      infoBox.style.maxHeight = infoBox.scrollHeight + 'px';
     }
+
+    // Toggle the 'showing' class regardless of the current state
+    infoBox.classList.toggle('showing');
   });
 });
+
 
