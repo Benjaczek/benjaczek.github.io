@@ -171,7 +171,8 @@ a {
     margin-top: 1.25em;
     justify-content: space-evenly;
     max-width: 100%;  /* Add this */
-    overflow: hidden; /* Add this */
+    max-height: 0; /* Start with max-height 0 */
+    overflow: hidden; /* Hide overflow when collapsed */
 }
 
 .info-box.showing {
@@ -179,6 +180,7 @@ a {
     visibility: visible;
     position: relative;
 }
+
 
 .video-container {
     position: relative;
