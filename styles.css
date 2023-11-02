@@ -120,11 +120,12 @@ a {
     border: 0.125em solid white;  /* previously 2px */
     box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.2);  /* previously 10px */
     margin-top: 1.25em;  /* previously 20px */
+    margin-bottom: 1.25em;  /* previously 20px */
     width: 90%;  
     overflow: hidden; 
-    /* Remove these:
+   /* Remove these:*/
     height: auto; 
-    max-height: 15.3125em;  */
+    max-height: 15.3125em; 
     
     max-width: 50em;  /* previously 800px */
     margin: 0 auto;
