@@ -252,7 +252,7 @@ a {
     text-align: center;
     font-size: 0.75em;
     color: lightgrey;
-    padding: 0.3125em;
+    padding: 1em 0; 
     background: black;
     z-index: 1000; /* Make sure it stays on top of other content */
 }
