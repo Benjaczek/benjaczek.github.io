@@ -133,7 +133,7 @@ a {
     height: auto; 
     max-height: 15.3125em; 
     
-    max-width: 70em;  /* previously 800px */
+    max-width: 60em;  /* previously 800px */
     margin: 0 auto;
     transform: translateY(-100px);
 }
