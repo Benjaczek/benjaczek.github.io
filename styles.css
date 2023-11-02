@@ -184,6 +184,7 @@ a {
     opacity: 1;
     visibility: visible;
     position: relative;
+    padding-bottom: 5em;
 }
 
 .close-btn {
