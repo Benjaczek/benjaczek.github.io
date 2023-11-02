@@ -133,7 +133,7 @@ a {
     
     max-width: 50em;  /* previously 800px */
     margin: 0 auto;
-    transform: translateY(-50px);
+    transform: translateY(-100px);
 }
 
 .art-container, .kontakt-container {
@@ -143,7 +143,7 @@ a {
     box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.2);
     margin-top: 1.25em;
     justify-content: space-evenly;
-    transform: translateY(-50px);
+    transform: translateY(-100px);
 }
 
 .art-links {
