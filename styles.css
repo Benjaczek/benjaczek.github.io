@@ -225,22 +225,24 @@ a {
 
 .video-container2 {
     position: relative;
-    /* Remove the padding-bottom if setting explicit height */
-    padding-top: 1.5625em;
-    height: 0; /* Set to 0 to use the height of the iframe */
+    height: 0; /* This will be controlled by the iframe's height */
     overflow: hidden;
 }
 
 .video-container2 iframe {
     position: absolute;
-    top: 0;
-    left: 0;
-    /* Set the scale as needed */
+    top: 50%;
+    left: 50%;
+    /* Adjust scale to desired size, e.g., 0.5 for half size */
     transform: scale(0.5);
-    transform-origin: 0 0;
-    /* Double the width and height to maintain the aspect ratio after scaling */
-    width: 200%;
-    height: 200%;
+    /* Center the iframe in the container */
+    transform-origin: center center;
+    /* Set the actual size of the video, could be larger than container */
+    width: 1920px; /* Width of the video */
+    height: 1080px; /* Height of the video */
+    /* Adjust the offset to center the frame */
+    margin-top: -540px; /* Half of the height */
+    margin-left: -960px; /* Half of the width */
     border: none;
 }
 
