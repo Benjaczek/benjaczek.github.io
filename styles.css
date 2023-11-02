@@ -398,19 +398,14 @@ img {
 
 @media screen and (max-width: 37.5em) {
     .name {
-        font-size: 1.1em;
+        font-size: 0.9em;
         margin-bottom: 2em;
-       /* margin-right: 0.5em;*/
     }
 
     body {
         overflow-x: hidden;
         padding-top: 3.125em;
-          
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-          position: relative;
+        background-size: cover;
     }
 
     .letter-section {
@@ -430,30 +425,28 @@ img {
 
     .fixed-container {
         float: none;
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
         width: 90%;
         max-width: none;
     }
     
     .bio-container {
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
         padding: 0.3125em;
         overflow: scroll;
-        transform: translateY(-1em);
     }
     
     .art-container, .kontakt-container {
-        /*margin-left: auto;
-        margin-right: auto;*/
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
         padding: 1em; /* Combined values from both media queries */
         width: 100%; /* Combined values from both media queries */
-        transform: translateY(-0.1em);
     }
 
     .art-links {
         font-size: 0.9em;
-        transform: translateY(-2em);
     }
 
     .art-link {
@@ -482,10 +475,6 @@ img {
     }
 
     .video-container {
-        margin-top: 1em;
-    }
-    
-     .video-container2 {
         margin-top: 1em;
     }
 
