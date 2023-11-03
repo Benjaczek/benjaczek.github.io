@@ -130,7 +130,7 @@ a {
     margin-top: 1.25em;  /* previously 20px */
     margin-bottom: 1.25em;  /* previously 20px */
     width: 90%;  
-    overflow: hidden; 
+    overflow: scroll;
    /* Remove these:*/
     height: auto; 
     max-height: 15.3125em; 
@@ -446,12 +446,17 @@ p.b {
     transform: scale(1.3); /* Optional: Zooms in the image a little on hover */
 }
 
+.clear {
+  clear: both;
+}
+
 
 @media screen and (max-width: 37.5em) {
     .name {
         font-size: 0.9em;
         margin-bottom: 1em;
     }
+    
     .work-item {
         font-size: 0.8em; /* Adjust the font size as needed */
     }
