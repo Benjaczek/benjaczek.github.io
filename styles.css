@@ -161,7 +161,7 @@ a {
     cursor: pointer;
     color: grey;
     transform: translateY(-8em);
-    height: auto; 
+    /*height: auto;*/ 
     /*max-height: 15.3125em; */
 }
 
