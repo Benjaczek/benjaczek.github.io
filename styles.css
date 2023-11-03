@@ -352,10 +352,12 @@ img {
   margin-bottom: 2em; /* Space out the work items */
   transition: transform 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease; /* Smooth transformation on hover */
   font-size: 1em; /* Adjust the font size as needed */
+  border: 0.125em solid white;
+  padding: 0.3125em;
 }
 
 .work-item:hover {
-  transform: translateY(-0.3125em); /* Slight upward lift on hover */
+  transform: translateY(-0.1125em); /* Slight upward lift on hover */
   font-weight: bold; /* Make the font bold when hovered */
   font-size: 1.1em; /* Slightly increase the font size on hover */
 }
