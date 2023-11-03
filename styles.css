@@ -415,6 +415,10 @@ p.b {
 
 
 .gallery-container {
+    position: static;
+    left: 0;
+    right: 0;
+    bottom: 2em;
     max-width: 90%; /* or 100% for full width */
     margin: auto; /* this centers your gallery if it's less than 100% */
     padding: 2em; /* Adjust as necessary */
