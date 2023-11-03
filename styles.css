@@ -442,7 +442,7 @@ p.b {
 }
 
 .gallery-item:hover {
-    transform: scale(3); /* Optional: Zooms in the image a little on hover */
+    transform: scale(1.8); /* Optional: Zooms in the image a little on hover */
 }
 
 
