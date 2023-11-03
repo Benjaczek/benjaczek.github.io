@@ -422,8 +422,11 @@ p.b {
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Creates a responsive grid layout */
-    gap: 0.5em; /* Adjust the space between images */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0.5em;
+    /* Center the gallery */
+    justify-content: center; /* This centers the grid items in the grid container if there's extra space */
+    margin: 0 auto; /* This centers the grid container itself in the parent */
 }
 
 .gallery-item {
