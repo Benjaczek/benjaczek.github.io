@@ -399,7 +399,7 @@ img {
   z-index: 5; /* Below the work details but above other content */
 }
 
-div {
+p.a {
   text-align: justify;
 }
 
