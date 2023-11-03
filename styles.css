@@ -230,7 +230,8 @@ a {
 
 .video-container2 {
     position: relative;
-    height: 0; /* This will be controlled by the iframe's height */
+    padding-bottom: 56.25%; /* Adjust this value as needed */
+    /*height: 0; /* This will be controlled by the iframe's height */
     overflow: hidden;
 }
 
