@@ -403,6 +403,10 @@ p.a {
   text-align: justify;
 }
 
+p.b {
+  text-align: right;
+}
+
 
 @media screen and (max-width: 37.5em) {
     .name {
