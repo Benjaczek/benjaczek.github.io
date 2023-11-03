@@ -352,7 +352,7 @@ img {
   cursor: pointer;
   margin-top: 2em; /* Space out the work items */
   transition: transform 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease; /* Smooth transformation on hover */
-  font-size: 1.5em; /* Adjust the font size as needed */
+  font-size: 1.3em; /* Adjust the font size as needed */
   border: 0.125em solid white;
   padding: 0.3125em;
 }
@@ -360,7 +360,7 @@ img {
 .work-item:hover {
   transform: translateY(-0.1125em); /* Slight upward lift on hover */
   font-weight: bold; /* Make the font bold when hovered */
-  font-size: 1.8em; /* Slightly increase the font size on hover */
+  font-size: 1.6em; /* Slightly increase the font size on hover */
 }
 
 .work-details {
@@ -404,10 +404,12 @@ img {
 
 p.a {
   text-align: justify;
+ 
 }
 
 p.b {
   text-align: right;
+  font-size: 0.8em; 
 }
 
 
