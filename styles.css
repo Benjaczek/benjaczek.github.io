@@ -418,15 +418,16 @@ p.b {
     max-width: 90%; /* or 100% for full width */
     margin: auto; /* this centers your gallery if it's less than 100% */
     padding: 2em; /* Adjust as necessary */
+    justify-content: center; /* This centers the grid items in the grid container if there's extra space */
+    margin: 0 auto; /* This centers the grid container itself in the parent */
 }
 
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 0.5em;
-    /* Center the gallery */
-    justify-content: center; /* This centers the grid items in the grid container if there's extra space */
-    margin: 0 auto; /* This centers the grid container itself in the parent */
+    
+    
 }
 
 .gallery-item {
