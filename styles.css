@@ -149,6 +149,8 @@ a {
     margin-top: 1.25em;
     justify-content: space-evenly;
     transform: translateY(-8em);
+    height: auto; 
+    max-height: 15.3125em; 
 }
 
 
@@ -159,6 +161,8 @@ a {
     cursor: pointer;
     color: grey;
     transform: translateY(-8em);
+    height: auto; 
+    /*max-height: 15.3125em; */
 }
 
 .art-link {
