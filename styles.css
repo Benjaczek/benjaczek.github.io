@@ -399,6 +399,10 @@ img {
   z-index: 5; /* Below the work details but above other content */
 }
 
+div {
+  text-align: justify;
+}
+
 
 @media screen and (max-width: 37.5em) {
     .name {
