@@ -449,12 +449,12 @@ img {
         margin-right: auto;
         padding: 1em; /* Combined values from both media queries */
         width: 100%; /* Combined values from both media queries */
-        transform: translateY(-2em);
+        transform: translateY(1em);
     }
 
     .art-links {
         font-size: 0.9em;
-        transform: translateY(-4em);
+        transform: translateY(-1em);
     }
 
     .art-link {
