@@ -491,12 +491,12 @@ p.b {
         transform: translateY(-2em);
     }
     
-    .bio-container {
+   .bio-container {
         margin-left: auto;
         margin-right: auto;
         padding: 0.3125em;
         overflow: scroll;
-        transform: translateY(-2em);
+        transform: translateY(0); /* Resets any translateY applied outside the media query */
     }
     
     .art-container, .kontakt-container {
