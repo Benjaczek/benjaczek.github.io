@@ -57,7 +57,7 @@ body {
     margin-left: 0.1125em;
 }
 
-/*
+
 .vertical {
     color: white;
     display: block;
@@ -71,13 +71,13 @@ body {
 
 .letter-section:hover .vertical {
     color: grey;
-    /*display: block; *//*
+    /*display: block; */
     opacity: 1;
     border-color: grey;
     transition: opacity 0.9s ease, color 0.9s ease, border-color 0.9s ease;
 }
-*/
 
+/*
 .vertical {
     color: white;
     text-align: left;
@@ -95,7 +95,7 @@ body {
     visibility: visible; 
     transition: opacity 0.9s, max-height 0.9s, visibility 0s 0s; 
 }
-
+*/
 
 .sticky-dropdown {
     display: block !important;
@@ -138,7 +138,7 @@ a {
     /* max-height: 15.3125em; - not necessary unless you want to limit the height */
     /* margin-top: 1.25em; - removed because it's overridden by margin shorthand */
     /* margin-bottom: 1.25em; - removed because it's overridden by margin shorthand */
-    transform: translateY(-4em); 
+    transform: translateY(-6em); 
 }
 
 .art-container, .kontakt-container {
