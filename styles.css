@@ -414,37 +414,30 @@ p.b {
 
 
 
-.gallery-container {
-    position: static;
-    left: 0;
-    right: 0;
-    bottom: 2em;
-    max-width: 90%; /* or 100% for full width */
-    margin: auto; /* this centers your gallery if it's less than 100% */
-    padding: 2em; /* Adjust as necessary */
-    justify-content: center; /* This centers the grid items in the grid container if there's extra space */
-    margin: 0 auto; /* This centers the grid container itself in the parent */
+.image-gallery {
+    display: flex;
+    justify-content: center; /* Or 'space-around' for even spacing */
+    padding: 1em;
+    overflow-x: auto; /* for horizontal scrolling if many images */
 }
 
-.gallery-container {
-    clear: both; /* Clears any previous floats */
-    width: 100%; /* Takes up full width */
-    text-align: center; /* Centers inline or inline-block elements */
-    margin: 1em 0; /* Optional: adds space above and below the gallery */
+.image-gallery img {
+    max-width: 100%; /* Ensures images scale down on smaller screens */
+    height: auto; /* Keeps the aspect ratio of images */
+    margin: 0 0.5em; /* Add some space between images */
 }
 
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 0.5em;
-    justify-content: center;
-    margin: 0 auto; /* Ensures the grid is centered in the .gallery-container */
+.gallery-img {
+    width: 100px; /* or whatever size you prefer */
+    height: auto;
+    transition: transform 0.3s ease-in-out; /* Smooth transition for zoom effect */
+    margin: 5px; /* Spacing between images */
 }
 
-.gallery-item:hover {
-    transform: scale(1.8); /* Optional: Zooms in the image a little on hover */
+.gallery-img:hover {
+    transform: scale(1.1); /* Increase the size of the image to 110% when hovered */
+    cursor: pointer; /* Change the cursor to indicate the image can be interacted with */
 }
-
 
 
 
@@ -552,6 +545,10 @@ p.b {
     #viewMoreBtn {
         padding: 0.25em 0.5em;
         font-size: 0.9em;
+    }
+
+    .image-gallery img {
+        margin: 0.25em; /* Adjust for smaller screens if necessary */
     }
 }
 
