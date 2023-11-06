@@ -416,9 +416,10 @@ p.b {
 
 .image-gallery {
     display: flex;
-    justify-content: center; /* Or 'space-around' for even spacing */
+    justify-content: center;
     padding: 1em;
-    overflow-x: auto; /* for horizontal scrolling if many images */
+    overflow-x: auto;
+    margin-top: /* Height of the fixed container plus any additional space */;
 }
 
 .image-gallery img {
