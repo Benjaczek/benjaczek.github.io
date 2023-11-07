@@ -413,15 +413,26 @@ p.b {
 }
 
 
+/* Wrap content other than the gallery in this container */
+.content-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+/* Existing styles for .image-gallery */
 .image-gallery {
-    clear: both; /* clears any floats */
-    display: block; /* or flex if you want a flexbox layout */
-    width: 90%; /* takes the full width */
-    margin-top: 20px; /* space between the bio-container and gallery */
-    /*display: flex;*/
+    clear: both;
+    display: flex;
     justify-content: center;
     padding: 1em;
     overflow-x: auto;
+    /* Remove margin-top or set it to a specific value if needed */
+}
+
+/* Add this to ensure .image-gallery is always at the bottom */
+.content-wrapper + .image-gallery {
+    margin-top: auto;
 }
 
 .image-gallery img {
