@@ -413,14 +413,15 @@ p.b {
 }
 
 
-
 .image-gallery {
-    clear: both;
-    display: flex;
+    clear: both; /* clears any floats */
+    display: block; /* or flex if you want a flexbox layout */
+    width: 90%; /* takes the full width */
+    margin-top: 20px; /* space between the bio-container and gallery */
+    /*display: flex;*/
     justify-content: center;
     padding: 1em;
     overflow-x: auto;
-    margin-top: /* Height of the fixed container plus any additional space */;
 }
 
 .image-gallery img {
