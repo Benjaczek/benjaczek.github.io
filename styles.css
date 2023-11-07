@@ -428,6 +428,7 @@ p.b {
     padding: 1em;
     overflow-x: auto;
     transform: translateY(15em); 
+    margin-right: 15em;
     /* Remove margin-top or set it to a specific value if needed */
 }
 
