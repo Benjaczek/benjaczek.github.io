@@ -415,6 +415,7 @@ p.b {
 
 
 .image-gallery {
+    clear: both;
     display: flex;
     justify-content: center;
     padding: 1em;
