@@ -569,6 +569,7 @@ p.b {
         width: 80%;
         margin-left: 10%;
         margin-right: 10%;
+        transform: translateY(5em); /* Ensure it's centered with translate */
     }
 
     .video-container {
