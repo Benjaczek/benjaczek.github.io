@@ -538,7 +538,7 @@ p.b {
         margin-right: auto;
         padding: 1em; /* Combined values from both media queries */
         width: 100%; /* Combined values from both media queries */
-        transform: translateY(5em);
+        transform: translateY(15em);
     }
 
     .art-links {
@@ -552,7 +552,7 @@ p.b {
     }
 
     h1 {
-        font-size: 1.25em;
+        font-size: 1em;
     }
 
     .info-box h2 {
