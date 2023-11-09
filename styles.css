@@ -592,5 +592,9 @@ p.b {
     .image-gallery img {
         margin: 0.25em; /* Adjust for smaller screens if necessary */
     }
+
+    .work-details {
+         transform: translateY(5em); /* Ensure it's centered with translate */
+}
 }
 
