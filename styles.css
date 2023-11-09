@@ -8,6 +8,7 @@ body {
     justify-content: space-evenly;
     align-items: flex-start;
     padding-top: 3em;
+    transform: scale(0.9); /* This will scale down the entire body by 10% */
 
     background-image: url('www.erik-winter.com_6.smaller.jpg'); /* Adjust the path if necessary */
     background-size: contain; /* Now the image should cover the entire viewport */
