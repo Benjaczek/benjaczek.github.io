@@ -487,11 +487,13 @@ p.b {
     object-fit: contain; /* This will make sure the image fits within the container */
 }
 
-.gallery-img:hover {
-    transform: scale(1.1); /* Increase the size of the image to 110% when hovered */
-    cursor: pointer; /* Change the cursor to indicate the image can be interacted with */
-}
 
+/* 
+.gallery-img:hover {
+    transform: scale(1.1); 
+    cursor: pointer;
+}
+*/
 
 
 
