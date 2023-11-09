@@ -542,6 +542,7 @@ p.b {
    .bio-container {
         margin-left: auto;
         margin-right: auto;
+        font-size: 0.8em;  /* Use the smaller font size from the second media query */
         padding: 0.3125em;
         overflow: scroll;
         transform: translateY(0); /* Resets any translateY applied outside the media query */
@@ -550,6 +551,7 @@ p.b {
     .art-container, .kontakt-container {
         margin-left: auto;
         margin-right: auto;
+        font-size: 0.8em;  /* Use the smaller font size from the second media query */
         padding: 1em; /* Combined values from both media queries */
         width: 100%; /* Combined values from both media queries */
         transform: translateY(15em);
@@ -581,8 +583,8 @@ p.b {
 
     .info-box {
         width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: auto;
+        margin-right: auto;
         transform: translateY(5em); /* Ensure it's centered with translate */
     }
 
@@ -609,8 +611,13 @@ p.b {
     }
 
     .work-details {
-        transform: translateY(5em); /* Ensure it's centered with translate */
-        transform: translateX(-12em); /* Ensure it's centered with translate */
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        /*
+        transform: translateY(5em); 
+        transform: translateX(-12em);
+        */
 }
 }
 
