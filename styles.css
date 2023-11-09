@@ -575,6 +575,10 @@ p.b {
         font-size: 0.8em;  /* Use the smaller font size from the second media query */
     }
 
+    .info-box p {
+        font-size: 0.8em;  /* Use the smaller font size from the second media query */
+    }
+
     .big_words_container {
         font-size: 0.8em;      /* Reduce the font size */
         bottom: 7em;          /* Adjust the position from the bottom */
@@ -611,7 +615,7 @@ p.b {
     }
 
     .work-details {
-        width: 80%;
+        width: 110%;
         margin-left: auto;
         margin-right: auto;
         /*
