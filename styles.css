@@ -203,7 +203,7 @@ a {
     opacity: 0;
     transition: opacity 0.9s ease-out, max-height 0.9s ease-out;
     visibility: hidden;
-    position: static;
+    position: absolute;
     background: black;
     border: 0.125em solid white;
     padding: 1.25em;
