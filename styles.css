@@ -428,6 +428,7 @@ p.b {
     justify-content: center;
     padding: 1em;
     overflow-x: auto;
+    max-width: 89em;  
     /*transform: translateY(15em); */
     /*margin-right: 50%;*/
     /* Remove margin-top or set it to a specific value if needed */
