@@ -395,8 +395,8 @@ img {
   position: relative; /* Overlay the details on top of the work items */
   margin-top: 5em
   z-index: 10; /* Ensure it's on top of other elements */
-  width: 80%; /* Match the width of your bio-container was 80%*/
-  max-width: 50em; /* Maximum width to ensure readability */
+  width: 120%; /* Match the width of your bio-container was 80%*/
+  /*max-width: 50em; /* Maximum width to ensure readability */
   top: 0; /* Align it with the top of the parent */
   left: 50%; /* Center it horizontally */
   transform: translateX(-50%); /* Ensure it's centered with translate */
@@ -607,7 +607,7 @@ p.b {
 
     .work-details {
         transform: translateY(5em); /* Ensure it's centered with translate */
-        transform: translateX(5em); /* Ensure it's centered with translate */
+        transform: translateX(-10em); /* Ensure it's centered with translate */
 }
 }
 
