@@ -422,8 +422,13 @@ p.b {
 
 /* Existing styles for .image-gallery */
 .image-gallery {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
     clear: both;
-    display: flex;
+    display: absolute;
     justify-content: center;
     padding: 1em;
     overflow-x: auto;
@@ -431,6 +436,7 @@ p.b {
     margin-right: 50%;
     /* Remove margin-top or set it to a specific value if needed */
 }
+
 
 /* Add this to ensure .image-gallery is always at the bottom */
 .content-wrapper + .image-gallery {
