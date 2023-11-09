@@ -446,10 +446,10 @@ p.b {
 }
 
 .gallery-img {
-    width: 100px; /* or whatever size you prefer */
+    width: 15em; /* or whatever size you prefer */
     height: auto;
     transition: transform 0.3s ease-in-out; /* Smooth transition for zoom effect */
-    margin: 5px; /* Spacing between images */
+    margin: 0.4em; /* Spacing between images */
 }
 
 .gallery-img:hover {
