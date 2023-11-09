@@ -141,6 +141,28 @@ a {
     transform: translateY(-6em); 
 }
 
+
+.gallery-container {
+    position: relative;
+    background-color: black;
+    padding: 1.25em;  
+    border: 0.125em solid white;  
+    box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.2);  
+    width: 90%;  
+    overflow: scroll;
+    max-width: 55em;  
+    
+    /* Updated margin: Top, Right & Left, Bottom */
+    margin: 0.625em auto 1.25em; /* adjust the top margin as needed to reduce the gap */
+    
+    /* Removed properties */
+    /* height: auto; - not necessary unless you want a specific height */
+    /* max-height: 15.3125em; - not necessary unless you want to limit the height */
+    /* margin-top: 1.25em; - removed because it's overridden by margin shorthand */
+    /* margin-bottom: 1.25em; - removed because it's overridden by margin shorthand */
+    /*transform: translateY(-6em); */
+}
+
 .art-container, .kontakt-container {
     background-color: black;
     padding: 1.25em;
