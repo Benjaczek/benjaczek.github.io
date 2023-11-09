@@ -470,12 +470,20 @@ p.b {
 }
 
 .gallery-img {
-    width: 15em; /* or whatever size you prefer */
+    /*
+    width: 15em; 
     height: auto;
-    transition: transform 0.3s ease-in-out; /* Smooth transition for zoom effect */
+    
     margin-left: 20%;
     margin-right: 20%
-    margin: 0.4em; /* Spacing between images */
+    margin: 0.4em; 
+    */
+    transition: transform 0.3s ease-in-out; 
+    max-width: 100%;
+    max-height: 100%;
+    display: block; /* Remove default inline styling */
+    margin: auto; /* This will center the image horizontally */
+    object-fit: contain; /* This will make sure the image fits within the container */
 }
 
 .gallery-img:hover {
