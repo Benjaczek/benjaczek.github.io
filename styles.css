@@ -610,7 +610,7 @@ p.b {
 
     .work-details {
         transform: translateY(5em); /* Ensure it's centered with translate */
-        transform: translateX(-18em); /* Ensure it's centered with translate */
+        transform: translateX(-12em); /* Ensure it's centered with translate */
 }
 }
 
