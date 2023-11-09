@@ -479,15 +479,15 @@ p.b {
     margin: 0.4em; 
     */
     transition: transform 0.3s ease-in-out; 
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 80%;
+    max-height: 80%;
     display: block; /* Remove default inline styling */
     margin: auto; /* This will center the image horizontally */
     object-fit: contain; /* This will make sure the image fits within the container */
 }
 
 .gallery-img:hover {
-    transform: scale(2.5); /* Increase the size of the image to 110% when hovered */
+    transform: scale(1.1); /* Increase the size of the image to 110% when hovered */
     cursor: pointer; /* Change the cursor to indicate the image can be interacted with */
 }
 
