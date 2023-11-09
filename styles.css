@@ -472,6 +472,8 @@ p.b {
     width: 15em; /* or whatever size you prefer */
     height: auto;
     transition: transform 0.3s ease-in-out; /* Smooth transition for zoom effect */
+    margin-left: 20%;
+    margin-right: 20%
     margin: 0.4em; /* Spacing between images */
 }
 
