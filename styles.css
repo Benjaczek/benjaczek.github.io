@@ -453,7 +453,7 @@ p.b {
 }
 
 .gallery-img:hover {
-    transform: scale(1.1); /* Increase the size of the image to 110% when hovered */
+    transform: scale(2.5); /* Increase the size of the image to 110% when hovered */
     cursor: pointer; /* Change the cursor to indicate the image can be interacted with */
 }
 
