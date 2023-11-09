@@ -428,8 +428,8 @@ p.b {
     justify-content: center;
     padding: 1em;
     overflow-x: auto;
-    transform: translateY(15em); 
-    margin-right: 50%;
+    /*transform: translateY(15em); */
+    /*margin-right: 50%;*/
     /* Remove margin-top or set it to a specific value if needed */
 }
 
