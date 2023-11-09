@@ -425,7 +425,7 @@ p.b {
     
     clear: both;
     display: absolute;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 1em;
     overflow-x: auto;
     max-width: 89em;  
