@@ -393,6 +393,7 @@ img {
   border: 0.125em solid white;
   box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.2);
   position: relative; /* Overlay the details on top of the work items */
+  margin-top: 5em
   z-index: 10; /* Ensure it's on top of other elements */
   width: 80%; /* Match the width of your bio-container was 80%*/
   max-width: 50em; /* Maximum width to ensure readability */
