@@ -99,7 +99,7 @@ if (viewMoreBtn && hiddenBio) {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    var letterSections = document.querySelectorAll('.letter-section, .art-link, .info-box');
+    var letterSections = document.querySelectorAll('.letter-section, .art-link, .info-box, .bio-container');
     var overlay = document.querySelector('.overlay');
 
     letterSections.forEach(function(section) {
