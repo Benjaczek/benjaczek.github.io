@@ -167,7 +167,16 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-
+document.addEventListener('click', function(event) {
+  // Iterate through all work-details elements
+  document.querySelectorAll('.work-details').forEach(function(details) {
+    // Check if the click is outside the current work-details element
+    if (!details.contains(event.target) && !event.target.classList.contains('work-item') && details.style.display !== 'none') {
+      // Close the work-details element
+      closeWorkDetails(details.id.replace('-details', ''));
+    }
+  });
+});
 
 
 document.querySelectorAll('.work-btn').forEach(button => {
