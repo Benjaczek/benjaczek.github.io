@@ -77,8 +77,8 @@ if (production) {
 }
 
 let filmScore = document.getElementById('filmScores');
-if (production) {
-    production.addEventListener('click', function() {
+if (filmScore) {
+    filmScore.addEventListener('click', function() {
         hideAllInfoBoxes();
         toggleInfoBox('filmScore-info');
     });
