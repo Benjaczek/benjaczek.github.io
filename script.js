@@ -76,6 +76,14 @@ if (production) {
     });
 }
 
+let filmScore = document.getElementById('filmScores');
+if (production) {
+    production.addEventListener('click', function() {
+        hideAllInfoBoxes();
+        toggleInfoBox('production-info');
+    });
+}
+
 let soundArt = document.getElementById('soundArts');
 if (soundArt) {
     soundArt.addEventListener('click', function() {
