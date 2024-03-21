@@ -80,7 +80,7 @@ let filmScore = document.getElementById('filmScores');
 if (production) {
     production.addEventListener('click', function() {
         hideAllInfoBoxes();
-        toggleInfoBox('production-info');
+        toggleInfoBox('filmScore-info');
     });
 }
 
