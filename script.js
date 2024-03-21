@@ -130,12 +130,23 @@ function showWorkDetails(workId) {
 
 // Function to close work details
 function closeWorkDetails(workId) {
-  var details = document.getElementById(workId + '-details');
-  if (details) {
-    details.style.display = 'none';
-    details.classList.remove('showing');
-  }
+    var details = document.getElementById(workId + '-details');
+    if (details) {
+        // Find all iframes within the details section
+        var iframes = details.getElementsByTagName('iframe');
+        
+        // Loop through each iframe and reset its src attribute to stop the video
+        for (var i = 0; i < iframes.length; i++) {
+            var iframeSrc = iframes[i].src;
+            iframes[i].src = iframeSrc; // Resetting the src attribute to its current value reloads the iframe and stops the video
+        }
+
+        // Hide the details section
+        details.style.display = 'none';
+        details.classList.remove('showing');
+    }
 }
+
 
 // Remove the inline 'onclick' in your HTML and add this to your script.js
 document.addEventListener('DOMContentLoaded', function() {
