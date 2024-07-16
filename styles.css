@@ -23,23 +23,25 @@ body {
 }
 
 .social {
-  padding: 15px;
-  margin: 5px;
-  border-radius: 6px;
+  padding: 0.9375em;  /* 15px to em */
+  margin: 0.3125em;   /* 5px to em */
+  border-radius: 0.375em;  /* 6px to em */
   position: relative;
+  top: 2.5em;  /* 40px to em */
+  left: 2.5em;  /* 40px to em */
   overflow: hidden;
 }
 
-/* Social Media Links*/
-.social a{
-  font-size: 30px;
+/* Social Media Links */
+.social a {
+  font-size: 1.875em;  /* 30px to em */
   color: #F4FFFE;
- /*  border-style: groove;
-  border-color: grey;*/
-  padding: 10px;
-  margin: 10px;
-  border-radius: 6px;
-  display: inline-block
+  /* border-style: groove;
+  border-color: grey; */
+  padding: 0.625em;  /* 10px to em */
+  margin: 0.625em;  /* 10px to em */
+  border-radius: 0.375em;  /* 6px to em */
+  display: inline-block;
 }
 
 /* Social Media Links on mouse hover */
