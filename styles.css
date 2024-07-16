@@ -22,6 +22,36 @@ body {
   padding-bottom: 2em; /* Adjust the value so that it's enough to accommodate the height of the .impressum */
 }
 
+.social {
+  padding: 15px;
+  margin: 5px;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Social Media Links*/
+.social a{
+  font-size: 30px;
+  color: #F4FFFE;
+  border-style: groove;
+  border-color: grey;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 6px;
+  display: inline-block
+}
+
+/* Social Media Links on mouse hover */
+.social a:hover {
+  background-color: darkred;
+  color: white;
+  -webkit-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+  -moz-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+  -o-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+  transition: background-color 0.6s ease-out, color 0.6s ease-out;
+}
+
 .name {
     font-size: 3em;
     margin-bottom: 2em;
